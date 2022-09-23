@@ -1,1 +1,0 @@
-# Writing_Minggu-ke-1
