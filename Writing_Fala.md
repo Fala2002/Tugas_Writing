@@ -2,7 +2,7 @@
 
 ## **Unix Command Line**
 
-### **CLI(Command Line Interface)**
+### **CLI (Command Line Interface)**
 - **Command Line Interface** adalah cara berinteraksi antara user dengan sistem operasi atau perangkat lunak komputer dengan memberikan atau menuliskan perintah untuk menjalankan suatu tugas tertentu.
 - **Shell** adalah tampilan yang digunakan untuk memproses suatu perintah agar intruksi dapat berjalan sesuai dengan permintaan user. Selain itu, shell juga digunakan sebagai penerjemah user agar bisa terhubung dengan komputer.
 - **Terminal** Terminal sendiri bisa disebut juga dengan shell. Terminal berarti tampilan atau tempat untuk mengetikkan baris perintah berbasis teks dalam suatu sistem operasi. Terminal berfungsi untuk memanajemen serta mencari berkas yang ada dalam komputer kemudian file tersebut diolah sesuai dengan keinginan.
@@ -23,3 +23,8 @@
   - cp-R, digunakan untuk menyalin directory.
   - mv-R, digunakan untuk memindahkan directory.
   - rm-R atau rm-d, digunakan untuk menghapus directory.
+
+  
+  ## **Git dan Github
+  
+  ### *Pen
