@@ -34,7 +34,7 @@
 ### **Pentingnya penggunaan git dan github**
 Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam sebuat tim. Tujuan penggunaan git dan github yaitu mumudahkan programmer dalam berkolaborasi mengerjakan proyek yang sama tanpa harus susah copy paste folder aplikasi yang terupdate. Selain itu, kita juga tidak perlu menunggu rekan dalam satu tim menyelesaikan suatu program untuk berkolaborasi. Kita bisa membuat file didalam projek yang sama atau membuat code di file yang sama dan menyatukannya saat sudah selesai.
 
-### **Command pada git & github**
+### **Command pada git dan github**
   - Konfigurasi git. Dalam konfigurasi git terdapat 2 hal yang harus diperhatikan yaitu mengatur username, cara penulisannya git config --global user.name "Fala". Dan mengatur email, cara penulisannya git config --global user.email fala.alma@gmail.com
   - git init, digunakan untuk membuat repositori. Git init sendiri bisa diibaratkan seperti memasang memori card pada handphone dan hanya dijalankan satu kali saja.
   - git clone, digunakan untuk mengambil seluruh repositori dari lokasi yang dihosting melalui URL.
@@ -50,3 +50,8 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   - git remote, digunakan untuk melihat daftar remote di repositori.
   - git push -u origin, digunakan untuk mengirim perubahan ke remote repositori.
   - git pull, digunakan untuk mengambil perubahan dari remote ke local.
+  
+  
+## **Algoritma dan Struktur Data**
+- Algoritma adalah sebuah langkah-langkah untuk menyelesaikan suatu permasalahan yang ada. 
+
