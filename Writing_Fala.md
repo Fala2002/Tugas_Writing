@@ -27,9 +27,22 @@
   
 ## **Git dan Github**
   
-### *Pengertian**
-- **Git** adalah tools untuk programmer yang digunakan sebagai Version Control System. Version Control System maksudnya mencatat setiap perubahan pada file pada suatu proyek baik dikerjakan secara individu maupun tim.  Git biasanya digunakan oleh para programmer sebagai tempat penyimpanan file pemrograman mereka, karena lebih efektif.
+### **Pengertian**
+- **Git** adalah tools atau software untuk programmer yang digunakan sebagai Version Control System. Version Control System maksudnya mencatat setiap perubahan pada file pada suatu proyek baik dikerjakan secara individu maupun tim.  Git biasanya digunakan oleh para programmer sebagai tempat penyimpanan file pemrograman mereka, karena lebih efektif.
 - **Github** adalah sebuah website dan layanan berbasis cloud bagi para developer untuk menyimpan dan mengelola kode, serta mendokumentasikan dan mengontrol perubahannya. Selain itu, kita juga dapat membuat atau mengupload kode yang sudah dibuat ke server GitHub dan kemudian melakukan coding secara online.
 
-### *Pentingnya penggunaan git dan github**
+### **Pentingnya penggunaan git dan github**
 Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam sebuat tim. Tujuan penggunaan git dan github yaitu mumudahkan programmer dalam berkolaborasi mengerjakan proyek yang sama tanpa harus susah copy paste folder aplikasi yang terupdate. Selain itu, kita juga tidak perlu menunggu rekan dalam satu tim menyelesaikan suatu program untuk berkolaborasi. Kita bisa membuat file didalam projek yang sama atau membuat code di file yang sama dan menyatukannya saat sudah selesai.
+
+### **Command pada git & github**
+  - Konfigurasi git.
+    Mengatur username.
+    git config --global user.name "Fala"
+    Mengatur email.
+    git config --global user.email fala.alma@gmail.com
+  - git init, digunakan untuk membuat repositori. Git init sendiri bisa diibaratkan seperti memasang memori card pada handphone dan hanya dijalankan satu kali saja.
+  - git clone, digunakan untuk mengambil seluruh repositori dari lokasi yang dihosting melalui URL.
+  - git status, digunakan untuk mengecek repository status, terjadi perubahan pada git atau tidak.
+  - git add, digunakan untuk menambahkan file ke staging. Dalam penulisannya bisa seperti git add index.html atau bisa dengan git add .
+  - git commit, digunakan untuk menyimpan files di staging sebagai commit.
+  - git log, digunakan untuk melihat histori perubahan. 
