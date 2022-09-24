@@ -35,14 +35,18 @@
 Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam sebuat tim. Tujuan penggunaan git dan github yaitu mumudahkan programmer dalam berkolaborasi mengerjakan proyek yang sama tanpa harus susah copy paste folder aplikasi yang terupdate. Selain itu, kita juga tidak perlu menunggu rekan dalam satu tim menyelesaikan suatu program untuk berkolaborasi. Kita bisa membuat file didalam projek yang sama atau membuat code di file yang sama dan menyatukannya saat sudah selesai.
 
 ### **Command pada git & github**
-  - Konfigurasi git.
-    Mengatur username.
-    git config --global user.name "Fala"
-    Mengatur email.
-    git config --global user.email fala.alma@gmail.com
+  - Konfigurasi git. Dalam konfigurasi git terdapat 2 hal yang harus diperhatikan yaitu mengatur username, cara penulisannya git config --global user.name "Fala". Dan mengatur email, cara penulisannya git config --global user.email fala.alma@gmail.com
   - git init, digunakan untuk membuat repositori. Git init sendiri bisa diibaratkan seperti memasang memori card pada handphone dan hanya dijalankan satu kali saja.
   - git clone, digunakan untuk mengambil seluruh repositori dari lokasi yang dihosting melalui URL.
   - git status, digunakan untuk mengecek repository status, terjadi perubahan pada git atau tidak.
   - git add, digunakan untuk menambahkan file ke staging. Dalam penulisannya bisa seperti git add index.html atau bisa dengan git add .
-  - git commit, digunakan untuk menyimpan files di staging sebagai commit.
-  - git log, digunakan untuk melihat histori perubahan. 
+  - git commit -m, digunakan untuk menyimpan files di staging sebagai commit. Git commit juga digunakan untuk menyimpan perubahan pada version control.
+  - git log, digunakan untuk melihat histori perubahan atau riwayat commit yang sudah dijalankan.
+  - git diff, digunakan untuk melihat detail perubahan.
+  - git checkout, digunakan untuk kembali ke commit tertentu atau berpindah ke branch lain.
+  - git reset, digunakan untuk reset files ke sebuah commit, perubahan di branch yang dihapus menjadi ‘untracked files’.
+  - git revert, digunakan untuk undo commit, perubahan disimpan dalam commit. git revert akan membatalkan semua perubahan yang ada tanpa menghapus commit terakhir.
+  - git branch, digunakan untuk melihat branch yang ada. Branch aktif ditandai dengan `*`.
+  - git remote, digunakan untuk melihat daftar remote di repositori.
+  - git push -u origin, digunakan untuk mengirim perubahan ke remote repositori.
+  - git pull, digunakan untuk mengambil perubahan dari remote ke local.
