@@ -3,7 +3,7 @@
 ## **Unix Command Line**
 
 ### **CLI (Command Line Interface)**
-- **Command Line Interface** adalah cara berinteraksi antara user dengan sistem operasi atau perangkat lunak komputer dengan memberikan atau menuliskan perintah untuk menjalankan suatu tugas tertentu.
+- **Command Line Interface** adalah cara berinteraksi antara user dengan sistem operasi atau perangkat lunak komputer dengan memberikan atau menuliskan perintah untuk menjalankan suatu tugas tertentu. Contoh CLI antara lain sh, bash, zsh, cmd.exe.
 - **Shell** adalah tampilan yang digunakan untuk memproses suatu perintah agar intruksi dapat berjalan sesuai dengan permintaan user. Selain itu, shell juga digunakan sebagai penerjemah user agar bisa terhubung dengan komputer.
 - **Terminal** Terminal sendiri bisa disebut juga dengan shell. Terminal berarti tampilan atau tempat untuk mengetikkan baris perintah berbasis teks dalam suatu sistem operasi. Terminal berfungsi untuk memanajemen serta mencari berkas yang ada dalam komputer kemudian file tersebut diolah sesuai dengan keinginan.
 - **File System Structure** adalah sebuah filesystem yang mengatur bagaimana data disimpan di dalam sebuah system. Sistem operasi Windows & Unix-like menyusun file dan direktori menggunakan struktur yang bentuknya mirip tree atau pohon.
@@ -54,4 +54,17 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   
 ## **Algoritma dan Struktur Data**
 - Algoritma adalah sebuah langkah-langkah untuk menyelesaikan suatu permasalahan yang ada. 
-
+- Contoh permasalahannya seperti apa yang harus kita lakukan ketika lapar? dari permasalahan tersebut pastinya terdapat beberapa solusi. Bisa saja seperti kita menuju ke dapur lalu memasak akhirnya kita bisa makan. Bisa saja kita pergi ke warung untuk membeli makanan tersebut lalu akhirnya kita bisa makan. Dan bisa saja terdapat solusi-solusi lain yang bisa kita lakukan ketika lapar. Setiap orang pasti berbeda-beda dalam menyelesaikan permasalahan tersebut.
+- Ciri-ciri Algoritma antara lain :
+  - Input, harus memiliki 0 atau lebih inputan. Contohnya Susu sachet.
+  - Output, harus memiliki 1 inputan. Contohnya Segelas susu hangat.
+  - Definiteness, memiliki instruksi jelas dan tidak ambigu. Contohnya mulai dari menyiapkan susu sampai dengan cara pembuatannya.
+  - Finiteness, memiliki titik berhenti atau stop. Contohnya susu sudah selesai dibuat. 
+  - Effectiveness, haruslah tepat sasaran dan efisien.
+- Jenis proses algoritma antara lain :
+  - Sequence, instruksi yang dijalankan secara berurutan. Misalnya gelas diisi dengan air, lalu air siap untuk diminum.'
+  - Selection, instruksi yang dijalankan jika memenuhi suatu kondisi. Misalnya jika lampu merah, saya akan berhenti.
+  - Iteration, instruksi yang berulang kali dijalankan selama memenuhi suatu kondisi. Misalnya selama belum sampai rumah, saya akan terus menyetir.
+  - Concurrent, instruksi yang dijalankan secara bersamaan. Misalnya ibu mencuci baju sambil membersihkan rumah.
+- Penyajian algoritma antara lain :
+  - 
