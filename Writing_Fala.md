@@ -74,10 +74,10 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   b. Deklarasi, mendefinisikan/menyiapkan semua nama (variabel) yang akan digunakan.
   c. Deskripsi, langkah-langkah penyelesaian masalah.
 - Contoh Algortitma Sederhana : Perhitungan Luas Segitiga.
-  a. Masukkan alas.
-  b. Masukkan tinggi.
-  c. Luas segitiga adalah 1/2*a*t
-  d. Tampilkan luas segitiga.
+  - Masukkan alas.
+  - Masukkan tinggi.
+  - Luas segitiga adalah 1/2*a*t
+  - Tampilkan luas segitiga.
 - Penerapan algoritma luas segitiga menggunakan bahasa pemrograman C++.
   ```
   # include <iostream>
