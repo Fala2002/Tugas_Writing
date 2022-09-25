@@ -145,32 +145,32 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
       </html>
    ```
 - HTML Element 
-HTML Element merupakan sebuah komponen dalam halaman web, bisa berupa paragraf, judul, atau gambar.
+  - HTML Element merupakan sebuah komponen dalam halaman web, bisa berupa paragraf, judul, atau gambar.
 - Tag <br /> digunakan untuk berganti baris (spasi).
 - Tag <img /> digunakan untuk menampilkan element gambar.
 - HTML Attribute
-Attribute berfungsi untuk memberikan informasi tambahan kepada sebuah element. Penulisannya :
-```
-<a href="https://www.dumetschool.com/blog/animasi-mobil-motor-berjalan-dengan-css">Ini Mobil</a> 
-```
+  - Attribute berfungsi untuk memberikan informasi tambahan kepada sebuah element. Penulisannya :
+  ```
+  <a href="https://www.dumetschool.com/blog/animasi-mobil-motor-berjalan-dengan-css">Ini Mobil</a> 
+  ```
 - HTML Comment
-Comment adalah catatan kecil yang bisa kita tambahkan ke dalam kode sumber (source code) tanpa mengubah fungsi dari program yang kita buat. Keberadaan comment dalam source code akan diabaikan dan tidak dibaca oleh komputer saat programnya dijalankan. Dalam kasus HTML, browser akan mengabaikan semua comment yang kita tulis. HTML comment diawali dengan <!-- dan diakhiri dengan -->.
+  - Comment adalah catatan kecil yang bisa kita tambahkan ke dalam kode sumber (source code) tanpa mengubah fungsi dari program yang kita buat. Keberadaan comment dalam source code akan diabaikan dan tidak dibaca oleh komputer saat programnya dijalankan. Dalam kasus HTML, browser akan mengabaikan semua comment yang kita tulis. HTML comment diawali dengan <!-- dan diakhiri dengan -->.
 - Heading
-Tag heading akan menampilkan struktur website yang sudah dibuat. Diumpamakan tag <h1> sebagai judul bab pada sebuah buku, kemudian <h2> sebagai judul sub-bab. Misalnya tag heading yang memiliki 6 tingkatan. Penulisannya seperti di bawah ini:
-```
-<h1>Heading Satu</h1>
-<h2>Heading Dua</h2>
-<h3>Heading Tiga</h3>
-<h4>Heading Empat</h4>
-<h5>Heading Lima</h5>
-<h6>Heading Enam</h6>
-```
-Penggunaan tag heading sebaiknya berurutan. Hindari penggunaan seperti contoh di bawah ini:
-```
-<h1>Heading Satu</h1>
-<h5>Heading Dua</h5>
-<h3>Heading Tiga</h3>
-```
+  - Tag heading akan menampilkan struktur website yang sudah dibuat. Diumpamakan tag <h1> sebagai judul bab pada sebuah buku, kemudian <h2> sebagai judul sub-bab. Misalnya tag heading yang memiliki 6 tingkatan. Penulisannya seperti di bawah ini:
+  ```
+    <h1>Heading Satu</h1>
+  <h2>Heading Dua</h2>
+  <h3>Heading Tiga</h3>
+  <h4>Heading Empat</h4>
+  <h5>Heading Lima</h5>
+  <h6>Heading Enam</h6>
+  ```
+- Penggunaan tag heading sebaiknya berurutan. Hindari penggunaan seperti contoh di bawah ini:
+  ```
+  <h1>Heading Satu</h1>
+  <h5>Heading Dua</h5>
+  <h3>Heading Tiga</h3>
+  ```
 - Tag span
 Tag <span> digunakan untuk mengelompokkan tulisan dalam satu baris. Pada umumnya sering digunakan untuk menambahkan CSS pada suatu tulisan pada satu baris, tapi tidak menutup kemungkinan digunakan untuk hal lainnya. Contoh penggunaan:
 ```
