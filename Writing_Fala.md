@@ -52,7 +52,7 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   - git pull, digunakan untuk mengambil perubahan dari remote ke local.
   
   
-## **Algoritma dan Struktur Data**
+## **Algoritma**
 - Algoritma adalah sebuah langkah-langkah untuk menyelesaikan suatu permasalahan yang ada. 
 - Contoh permasalahannya seperti apa yang harus kita lakukan ketika lapar? dari permasalahan tersebut pastinya terdapat beberapa solusi. Bisa saja seperti kita menuju ke dapur lalu memasak akhirnya kita bisa makan. Bisa saja kita pergi ke warung untuk membeli makanan tersebut lalu akhirnya kita bisa makan. Dan bisa saja terdapat solusi-solusi lain yang bisa kita lakukan ketika lapar. Setiap orang pasti berbeda-beda dalam menyelesaikan permasalahan tersebut.
 - Ciri-ciri Algoritma antara lain :
@@ -104,3 +104,7 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   let luas_segitiga = 0.5 * alas * tinggi;
   
   console.log(`luas segitiga dengan alas: ${alas} dan tinggi ${tinggi} adalah ${luas_segitiga}`);
+
+##**HTML**
+  - HTML adalah singkatan dari <i>Hyper Text Markup Language</i>. HTML sendiri bisa diartikan sebagai bahasa komputer yang digunakan untuk membuat kerangka atau struktur untuk Web pages (halaman website) di internet.
+- 
