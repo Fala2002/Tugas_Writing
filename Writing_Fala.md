@@ -208,26 +208,27 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   </ol>
   ```
 - Tag untuk menampilkan video
-Sejak HTML5, sudah ada cara langsung untuk bisa menambahkan video pada halaman web kita; yaitu dengan menggunakan tag <video>. Format video yang didukung antara lain: mp4, ogg, dan webM. Contoh penggunaan tag video :
-```
-<video width="320" height="240">
-  <source src="link-ke-video-nya" type="video/tipe-videonya"/>
-</video>
-```
-```
-<video width="320" height="240">
-  <source src="https://bit.ly/3j6rPni" />
-</video>
-```
+  - Sejak HTML5, sudah ada cara langsung untuk bisa menambahkan video pada halaman web kita, yaitu dengan menggunakan tag ``<video>``. Format video yang didukung antara lain mp4, ogg, dan webM. Contoh penggunaan tag video :
+  ```
+  <video width="320" height="240">
+    <source src="link-ke-video-nya" type="video/tipe-videonya"/>
+  </video>
+  ```
+  
+  ```
+  <video width="320" height="240">
+    <source src="https://bit.ly/3j6rPni" />
+  </video>
+  ```
 - Tag menampilan suara
-Untuk menampilkan suara pada halaman sebuah website bisa menggunakan tag <audio>. Format yang didukung pun meliputi mp3, wav, dan ogg.
-Syntax penulisannya juga ada dua seperti dengan tag <video> yaitu :
-```
-<audio controls src="link-ke-file-audio"></audio>
-```
+  - Untuk menampilkan suara pada halaman sebuah website bisa menggunakan tag ``<audio>``. Format yang didukung pun meliputi mp3, wav, dan ogg.
+Syntax penulisannya juga ada dua seperti dengan tag ``<video>`` yaitu :
+  ```
+  <audio controls src="link-ke-file-audio"></audio>
+  ```
 Atau menggunakan tag <source> yang diapit tag <audio>
-```
-<audio controls>
-    <source src="link-ke-file-audio" type="audio/tipe-audionya" />
-</audio>
-```
+  ```
+  <audio controls>
+      <source src="link-ke-file-audio" type="audio/tipe-audionya" />
+  </audio>
+  ```
