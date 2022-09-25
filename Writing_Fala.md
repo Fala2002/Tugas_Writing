@@ -53,6 +53,7 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   
   
 ## **Algoritma**
+  
 - Algoritma adalah sebuah langkah-langkah untuk menyelesaikan suatu permasalahan yang ada. 
 - Contoh permasalahannya seperti apa yang harus kita lakukan ketika lapar? dari permasalahan tersebut pastinya terdapat beberapa solusi. Bisa saja seperti kita menuju ke dapur lalu memasak akhirnya kita bisa makan. Bisa saja kita pergi ke warung untuk membeli makanan tersebut lalu akhirnya kita bisa makan. Dan bisa saja terdapat solusi-solusi lain yang bisa kita lakukan ketika lapar. Setiap orang pasti berbeda-beda dalam menyelesaikan permasalahan tersebut.
 - Ciri-ciri Algoritma antara lain :
@@ -105,6 +106,25 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   
   console.log(`luas segitiga dengan alas: ${alas} dan tinggi ${tinggi} adalah ${luas_segitiga}`);
 
-##**HTML**
-  - HTML adalah singkatan dari <i>Hyper Text Markup Language</i>. HTML sendiri bisa diartikan sebagai bahasa komputer yang digunakan untuk membuat kerangka atau struktur untuk Web pages (halaman website) di internet.
-- 
+## **HTML**
+  
+- HTML adalah singkatan dari <i>Hyper Text Markup Language</i>. HTML sendiri bisa diartikan sebagai bahasa komputer yang digunakan untuk membuat kerangka atau struktur untuk Web pages (halaman website) di internet.
+- Ada 2 tools utama yang harus dipersiapkan untuk membuat HTML, yaitu Browser dan Code Editor.
+- Visual Studio Code adalah code editor yang dikembangkan oleh tim engineer Microsoft.
+- HTML Structure :
+  ```
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+</head>
+<body>
+    <div>
+        <p>Hallo nama saya Fala Alma'as Liyanti dari Universitas PGRI Madiun</p>
+    </div>
+</body>
+</html>
+
