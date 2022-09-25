@@ -97,3 +97,11 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
     return 0;
   }
  ```
+- Penerapan algoritma luas segitiga menggunakan bahasa pemrograman Javascript.
+  ```
+  let alas = 8;
+  let tinggi = 10;
+  let luas_segitiga = 0.5 * alas * tinggi;
+  
+  console.log(`luas segitiga dengan alas: ${alas} dan tinggi ${tinggi} adalah ${luas_segitiga}`);
+ ````
