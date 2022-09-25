@@ -97,13 +97,13 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   
     return 0;
   }
-  
+  ```
 - Penerapan algotitma luas segitiga menggunakan Javascript.
   ```
   let alas = 8;
   let tinggi = 10;
   let luas_segitiga = 0.5 * alas * tinggi;
-  
+  ```
   console.log(`luas segitiga dengan alas: ${alas} dan tinggi ${tinggi} adalah ${luas_segitiga}`);
 
 ## **HTML**
@@ -129,3 +129,105 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
     </html>
   ```
 - HTML Tag
+  Tag adalah sebuah penanda awalan dan akhiran dari sebuah elemen di HTML yang biasanya dibuat dengan kurung siku (<...>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut. Pada umumnya, ada 2 tipe HTML Tag, yaitu Ppening Tag (tag pembuka) : <p>.Dan Closing Tag (tag penutup) : </p>. Dokumen HTML memiliki 3 tag utama, yaitu <html>,<head>, dan <body>. Contoh penulisannya :
+    ```
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       
+    </body>
+    </html>
+  ```
+- HTML Element 
+HTML Element merupakan sebuah komponen dalam halaman web, bisa berupa paragraf, judul, atau gambar. Ada dua jenis HTML Element, yaitu: HTML Element yang memiliki Opening Tag (tag pembuka) dan Closing Tag (tag penutup), contohnya adalah <p> dan </p>. Dan Empty HTML Element memiliki Self-closing Tag, yang hanya memiliki Opening Tag (tag pembuka) dengan garis miring sebelum kurung tutup, contohnya adalah <br /> atau <img />.
+Tag <br /> digunakan untuk berganti baris (spasi).
+Tag <img /> digunakan untuk menampilkan element gambar.
+- HTML Attribute
+  Attribute berfungsi untuk memberikan informasi tambahan kepada sebuah element. Penulisannya :
+  ```
+  <a href="https://www.dumetschool.com/blog/animasi-mobil-motor-berjalan-dengan-css">Ini Mobil</a> 
+  ```
+- HTML Comment
+Comment adalah catatan kecil yang bisa kita tambahkan ke dalam kode sumber (source code) tanpa mengubah fungsi dari program yang kita buat. Keberadaan comment dalam source code akan diabaikan dan tidak dibaca oleh komputer saat programnya dijalankan. Dalam kasus HTML, browser akan mengabaikan semua comment yang kita tulis. HTML comment diawali dengan <!-- dan diakhiri dengan -->.
+- Heading
+Tag heading akan menampilkan struktur website yang sudah dibuat. Diumpamakan tag <h1> sebagai judul bab pada sebuah buku, kemudian <h2> sebagai judul sub-bab. Misalnya tag heading yang memiliki 6 tingkatan. Penulisannya seperti di bawah ini:
+```
+<h1>Heading Satu</h1>
+<h2>Heading Dua</h2>
+<h3>Heading Tiga</h3>
+<h4>Heading Empat</h4>
+<h5>Heading Lima</h5>
+<h6>Heading Enam</h6>
+```
+Penggunaan tag heading sebaiknya berurutan. Hindari penggunaan seperti contoh di bawah ini:
+```
+<h1>Heading Satu</h1>
+<h5>Heading Dua</h5>
+<h3>Heading Tiga</h3>
+```
+- Tag span
+Tag <span> digunakan untuk mengelompokkan tulisan dalam satu baris. Pada umumnya sering digunakan untuk menambahkan CSS pada suatu tulisan pada satu baris, tapi tidak menutup kemungkinan digunakan untuk hal lainnya. Contoh penggunaan:
+```
+<p>Kucingku bermata <span style="color:blue"> biru</span></p>
+```
+- Tag untuk huruf tebal
+Tag <b> atau <strong> digunakan untuk membuat tulisan menjadi tebal. Contoh penggunan :
+```
+<p>
+Nama saya <b>Fala</b>. Saya berumur <strong>20 tahun.</strong>
+</p>
+```
+- Tag untuk huruf miring
+Untuk membuat huruf bercetak miring, maka dibutuhkan tag <i> atau <em>. Contoh penggunaan:
+```
+<p>
+  Nama latin dari tanaman padi adalah <i>Oryza</i> <em>sativa L.</em>
+</p>
+```
+- Tag list
+Ada dua tipe list di HTML, yaitu: Unordered list dengan menggunakan tag <ul> dan Ordered list dengan menggunakan tag <ol>. Masing-masing list baik <ul> atau <ol> memiliki element <li> untuk mendefinisikan nilai-nilai dari list tersebut. Contoh penggunaannya :
+```
+<!-- Unordered List -->
+<ul>
+  <li>Mawae</li>
+  <li>Melati/li>
+  <li>Anggrek</li>
+</ul>
+
+<!-- Ordered List -->
+<ol>
+  <li>Sapi</li>
+  <li>Beruang</li>
+  <li>Ikan</li>
+</ol>
+```
+- Tag untuk menampilkan video
+Sejak HTML5, sudah ada cara langsung untuk bisa menambahkan video pada halaman web kita; yaitu dengan menggunakan tag <video>. Format video yang didukung antara lain: mp4, ogg, dan webM. Contoh penggunaan tag video :
+```
+<video width="320" height="240">
+  <source src="link-ke-video-nya" type="video/tipe-videonya"/>
+</video>
+```
+```
+<video width="320" height="240">
+  <source src="https://bit.ly/3j6rPni" />
+</video>
+```
+- Tag menampilan suara
+Untuk menampilkan suara pada halaman sebuah website bisa menggunakan tag <audio>. Format yang didukung pun meliputi mp3, wav, dan ogg.
+Syntax penulisannya juga ada dua seperti dengan tag <video> yaitu :
+```
+<audio controls src="link-ke-file-audio"></audio>
+```
+Atau menggunakan tag <source> yang diapit tag <audio>
+```
+<audio controls>
+    <source src="link-ke-file-audio" type="audio/tipe-audionya" />
+</audio>
+```
