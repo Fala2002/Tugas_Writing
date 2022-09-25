@@ -67,4 +67,33 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   - Iteration, instruksi yang berulang kali dijalankan selama memenuhi suatu kondisi. Misalnya selama belum sampai rumah, saya akan terus menyetir.
   - Concurrent, instruksi yang dijalankan secara bersamaan. Misalnya ibu mencuci baju sambil membersihkan rumah.
 - Penyajian algoritma antara lain :
-  - 
+  - Deskriptif, penulisan algoritma dengan cara deskriptif seperti ketika kita menulis tutorial (tata cara) dengan bahasa sehari-hari.
+  - Flowchart, penulisan algoritma flow chart atau diagram alir dengan menggunakan simbol bangun datar sebagai represenatsi dari proses yang dilakukan. Penyajian algoritmanya lebih mudah dibaca karena memiliki tampilan visual.
+  - Peseudo Code, penulisan algoritma peseudo code hampir menyerupai penulisan pada kode pemrograman. Pada umumnya pseudocode memiliki 3 bagian yaitu
+  1. Judul, berisi tentang penjelasan dari algoritma yang dibuat.
+  2. Deklarasi, mendefinisikan/menyiapkan semua nama (variabel) yang akan digunakan.
+  3. Deskripsi, langkah-langkah penyelesaian masalah.
+- Contoh Algortitma Sederhana : Perhitungan Luas Segitiga.
+  1. Masukkan alas.
+  2. Masukkan tinggi.
+  3. Luas segitiga adalah 1/2*a*t
+  4. Tampilkan luas segitiga.
+- Penerapan algoritma luas segitiga menggunakan bahasa pemrograman C++.
+  ```
+  # include <iostream>
+    using namespace std;
+  
+    int main (){
+    int a, t;
+    float luas;
+    cout<<"Masukkan panjang alas = ";
+    cin>>a;
+    cout<<"Masukkan tinggi = ";
+    cin>>t;
+  
+    luas = 0.5*a*t;
+    cout<<"Luas Segitiga adalah "<<luas<<endl;
+  
+    return 0;
+  }
+ ```
