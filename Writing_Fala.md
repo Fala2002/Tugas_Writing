@@ -145,14 +145,14 @@ Tag adalah sebuah penanda awalan dan akhiran dari sebuah elemen di HTML yang bia
     </html>
   ```
 - HTML Element 
-HTML Element merupakan sebuah komponen dalam halaman web, bisa berupa paragraf, judul, atau gambar. Ada dua jenis HTML Element, yaitu: HTML Element yang memiliki Opening Tag (tag pembuka) dan Closing Tag (tag penutup), contohnya adalah <p> dan </p>. Dan Empty HTML Element memiliki Self-closing Tag, yang hanya memiliki Opening Tag (tag pembuka) dengan garis miring sebelum kurung tutup, contohnya adalah <br /> atau <img />.
-Tag <br /> digunakan untuk berganti baris (spasi).
-Tag <img /> digunakan untuk menampilkan element gambar.
+HTML Element merupakan sebuah komponen dalam halaman web, bisa berupa paragraf, judul, atau gambar.
+- Tag <br /> digunakan untuk berganti baris (spasi).
+- Tag <img /> digunakan untuk menampilkan element gambar.
 - HTML Attribute
-  Attribute berfungsi untuk memberikan informasi tambahan kepada sebuah element. Penulisannya :
-  ```
-  <a href="https://www.dumetschool.com/blog/animasi-mobil-motor-berjalan-dengan-css">Ini Mobil</a> 
-  ```
+Attribute berfungsi untuk memberikan informasi tambahan kepada sebuah element. Penulisannya :
+```
+<a href="https://www.dumetschool.com/blog/animasi-mobil-motor-berjalan-dengan-css">Ini Mobil</a> 
+```
 - HTML Comment
 Comment adalah catatan kecil yang bisa kita tambahkan ke dalam kode sumber (source code) tanpa mengubah fungsi dari program yang kita buat. Keberadaan comment dalam source code akan diabaikan dan tidak dibaca oleh komputer saat programnya dijalankan. Dalam kasus HTML, browser akan mengabaikan semua comment yang kita tulis. HTML comment diawali dengan <!-- dan diakhiri dengan -->.
 - Heading
