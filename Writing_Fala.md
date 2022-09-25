@@ -103,9 +103,9 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   let alas = 8;
   let tinggi = 10;
   let luas_segitiga = 0.5 * alas * tinggi;
-  ```
+  
   console.log(`luas segitiga dengan alas: ${alas} dan tinggi ${tinggi} adalah ${luas_segitiga}`);
-
+  ```
 ## **HTML**
   
 - HTML adalah singkatan dari <i>Hyper Text Markup Language</i>. HTML sendiri bisa diartikan sebagai bahasa komputer yang digunakan untuk membuat kerangka atau struktur untuk Web pages (halaman website) di internet.
@@ -129,15 +129,15 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
     </html>
   ```
 - HTML Tag
-  Tag adalah sebuah penanda awalan dan akhiran dari sebuah elemen di HTML yang biasanya dibuat dengan kurung siku (<...>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut. Pada umumnya, ada 2 tipe HTML Tag, yaitu Ppening Tag (tag pembuka) : <p>.Dan Closing Tag (tag penutup) : </p>. Dokumen HTML memiliki 3 tag utama, yaitu <html>,<head>, dan <body>. Contoh penulisannya :
-    ```
-   <!DOCTYPE html>
-    <html lang="en">
+Tag adalah sebuah penanda awalan dan akhiran dari sebuah elemen di HTML yang biasanya dibuat dengan kurung siku (<...>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut.Pada umumnya, ada 2 tipe HTML Tag, yaitu Ppening Tag (tag pembuka), <p>. Dan Closing Tag (tag penutup), </p>. Dokumen HTML memiliki 3 tag utama, yaitu <html>,<head>, dan <body>. Contoh penulisannya :
+```
+  <!DOCTYPE html>
+  <html lang="en">
     <head>
-         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
     </head>
     <body>
        
