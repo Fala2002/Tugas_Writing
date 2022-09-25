@@ -113,18 +113,19 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
 - Visual Studio Code adalah code editor yang dikembangkan oleh tim engineer Microsoft.
 - HTML Structure :
   ```
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Blog</title>
-</head>
-<body>
-    <div>
-        <p>Hallo nama saya Fala Alma'as Liyanti dari Universitas PGRI Madiun</p>
-    </div>
-</body>
-</html>
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Blog</title>
+    </head>
+    <body>
+         <div>
+            <p>Hallo nama saya Fala Alma'as Liyanti dari Universitas PGRI Madiun</p>
+          </div>
+    </body>
+    </html>
+ 
 
