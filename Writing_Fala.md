@@ -232,3 +232,8 @@ Syntax penulisannya juga ada dua seperti dengan tag ``<video>`` yaitu :
     <source src="link-ke-file-audio" type="audio/tipe-audionya" />
   </audio>
   ```
+- Halaman website lainnya
+  - Kita juga bisa menampilkan halaman website lainnya di halaman website yang kita buat dengan menggunakan tag ``<iframe>``. Contoh penggunaannya adalah seperti ini :   ```
+  <iframe src="https://bit.ly/32jR7ro" width="200" height="300" scrolling="no" frameborder="0"></iframe>
+  ```
+  Maksudnya yaitu
