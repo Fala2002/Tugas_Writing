@@ -226,9 +226,9 @@ Syntax penulisannya juga ada dua seperti dengan tag ``<video>`` yaitu :
   ```
   <audio controls src="link-ke-file-audio"></audio>
   ```
-Atau menggunakan tag <source> yang diapit tag <audio>
+  Atau menggunakan tag <source> yang diapit tag <audio>
   ```
   <audio controls>
-      <source src="link-ke-file-audio" type="audio/tipe-audionya" />
+    <source src="link-ke-file-audio" type="audio/tipe-audionya" />
   </audio>
   ```
