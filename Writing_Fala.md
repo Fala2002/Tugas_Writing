@@ -172,41 +172,41 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   <h3>Heading Tiga</h3>
   ```
 - Tag span
-Tag <span> digunakan untuk mengelompokkan tulisan dalam satu baris. Pada umumnya sering digunakan untuk menambahkan CSS pada suatu tulisan pada satu baris, tapi tidak menutup kemungkinan digunakan untuk hal lainnya. Contoh penggunaan:
-```
-<p>Kucingku bermata <span style="color:blue"> biru</span></p>
-```
+  - Tag <span> digunakan untuk mengelompokkan tulisan dalam satu baris. Pada umumnya sering digunakan untuk menambahkan CSS pada suatu tulisan pada satu baris, tapi tidak menutup kemungkinan digunakan untuk hal lainnya. Contoh penggunaan:
+  ```
+  <p>Kucingku bermata <span style="color:blue"> biru</span></p>
+  ```
 - Tag untuk huruf tebal
-Tag <b> atau <strong> digunakan untuk membuat tulisan menjadi tebal. Contoh penggunan :
-```
-<p>
-Nama saya <b>Fala</b>. Saya berumur <strong>20 tahun.</strong>
-</p>
-```
+  - Tag ``<b>`` atau ``<strong>`` digunakan untuk membuat tulisan menjadi tebal. Contoh penggunan :
+  ```
+  <p>
+  Nama saya <b>Fala</b>. Saya berumur <strong>20 tahun.</strong>
+  </p>
+  ```
 - Tag untuk huruf miring
-Untuk membuat huruf bercetak miring, maka dibutuhkan tag <i> atau <em>. Contoh penggunaan:
-```
-<p>
-  Nama latin dari tanaman padi adalah <i>Oryza</i> <em>sativa L.</em>
-</p>
-```
+  - Untuk membuat huruf bercetak miring, maka dibutuhkan tag ``<i>`` atau ``<em>``. Contoh penggunaan:
+  ```
+  <p>
+    Nama latin dari tanaman padi adalah <i>Oryza</i> <em>sativa L.</em>
+  </p>
+  ```
 - Tag list
-Ada dua tipe list di HTML, yaitu: Unordered list dengan menggunakan tag <ul> dan Ordered list dengan menggunakan tag <ol>. Masing-masing list baik <ul> atau <ol> memiliki element <li> untuk mendefinisikan nilai-nilai dari list tersebut. Contoh penggunaannya :
-```
-<!-- Unordered List -->
-<ul>
-  <li>Mawae</li>
-  <li>Melati/li>
-  <li>Anggrek</li>
-</ul>
+  - Ada dua tipe list di HTML, yaitu: Unordered list dengan menggunakan tag ``<ul>`` dan Ordered list dengan menggunakan tag ``<ol>``. Masing-masing list baik ``<ul>`` atau ``<ol>`` memiliki element ``<li>`` untuk mendefinisikan nilai-nilai dari list tersebut. Contoh penggunaannya :
+  ```
+  <!-- Unordered List -->
+  <ul>
+    <li>Mawae</li>
+    <li>Melati/li>
+    <li>Anggrek</li>
+  </ul>
 
-<!-- Ordered List -->
-<ol>
-  <li>Sapi</li>
-  <li>Beruang</li>
-  <li>Ikan</li>
-</ol>
-```
+  <!-- Ordered List -->
+  <ol>
+    <li>Sapi</li>
+    <li>Beruang</li>
+    <li>Ikan</li>
+  </ol>
+  ```
 - Tag untuk menampilkan video
 Sejak HTML5, sudah ada cara langsung untuk bisa menambahkan video pada halaman web kita; yaitu dengan menggunakan tag <video>. Format video yang didukung antara lain: mp4, ogg, dan webM. Contoh penggunaan tag video :
 ```
