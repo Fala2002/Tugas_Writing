@@ -70,14 +70,14 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   - Deskriptif, penulisan algoritma dengan cara deskriptif seperti ketika kita menulis tutorial (tata cara) dengan bahasa sehari-hari.
   - Flowchart, penulisan algoritma flow chart atau diagram alir dengan menggunakan simbol bangun datar sebagai represenatsi dari proses yang dilakukan. Penyajian algoritmanya lebih mudah dibaca karena memiliki tampilan visual.
   - Peseudo Code, penulisan algoritma peseudo code hampir menyerupai penulisan pada kode pemrograman. Pada umumnya pseudocode memiliki 3 bagian yaitu
-  1. Judul, berisi tentang penjelasan dari algoritma yang dibuat.
-  2. Deklarasi, mendefinisikan/menyiapkan semua nama (variabel) yang akan digunakan.
-  3. Deskripsi, langkah-langkah penyelesaian masalah.
+  a. Judul, berisi tentang penjelasan dari algoritma yang dibuat.
+  b. Deklarasi, mendefinisikan/menyiapkan semua nama (variabel) yang akan digunakan.
+  c. Deskripsi, langkah-langkah penyelesaian masalah.
 - Contoh Algortitma Sederhana : Perhitungan Luas Segitiga.
-  1. Masukkan alas.
-  2. Masukkan tinggi.
-  3. Luas segitiga adalah 1/2*a*t
-  4. Tampilkan luas segitiga.
+  a. Masukkan alas.
+  b. Masukkan tinggi.
+  c. Luas segitiga adalah 1/2*a*t
+  d. Tampilkan luas segitiga.
 - Penerapan algoritma luas segitiga menggunakan bahasa pemrograman C++.
   ```
   # include <iostream>
