@@ -129,7 +129,7 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
     </html>
   ```
 - HTML Tag
-Tag adalah sebuah penanda awalan dan akhiran dari sebuah elemen di HTML yang biasanya dibuat dengan kurung siku (<...>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut. Dokumen HTML memiliki 3 tag utama, yaitu <html>, <head>, dan <body>. Contoh penulisannya :
+  - Tag adalah sebuah penanda awalan dan akhiran dari sebuah elemen di HTML yang biasanya dibuat dengan kurung siku (<...>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut. Dokumen HTML memiliki 3 tag utama, yaitu <html>, <head>, dan <body>. Contoh penulisannya :
   ```
     <!DOCTYPE html>
     <html lang="en">
