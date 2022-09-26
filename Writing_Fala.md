@@ -151,6 +151,7 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   Struktur dari HTML Element bisa dituliskan seperti :
   ```
   <p style="color:red">This is a paragraph.</p>
+  
   HTML element diatas terdiri dari 
   Opening Tag (tag pembuka) yaitu <p>.
   Closing Tag (tag penutup) yaitu </p>.
@@ -158,13 +159,7 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   Content (konten) yaitu tampilan yang ingin ditampilkan di browser, This is a paragraph.
 
   ```
-  Pada umumnya, HTML Element terdiri dari Opening Tag (tag pembuka)contohnya adalah <p>.
-Closing Tag (tag penutup) - contohnya adalah </p>.
-Attribute - contohnya adalah style yang memiliki Value "color=red". HTML Attribute akan kita pelajari di topik selanjutnya.
-Content (konten) yang ingin ditampilkan di browser - contohnya adalah My first paragraph.
-
-- Tag ``<br />`` digunakan untuk berganti baris (spasi).
-- Tag ``<img />`` digunakan untuk menampilkan element gambar.
+  Selain HTML Element, terdapat Empty HTML Element yaitu HTML yang memiliki Self-closing Tag, yang hanya memiliki Opening Tag (tag pembuka) dengan garis miring sebelum kurung tutup. Contohnya adalah ``<br />`` atau ``<img />``
 - HTML Attribute
   - Attribute berfungsi untuk memberikan informasi tambahan kepada sebuah element. Penulisannya :
   ```
