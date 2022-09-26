@@ -231,3 +231,22 @@ Contoh source code HTML Semantic :
 </body>
 
 - **Deploy** adalah sebuah proses untuk menyebarkan aplikasi yang sudah kita kerjakan supaya bisa digunakan oleh orang-orang. Untuk mendeploy,bisa menggunakan tools bernama Netlify. Cara menggunakannya yaitu masuk ke netlify.com lalu register seperti biasa menggunakan email atau github. Setelah itu masuk ke tab Sites lalu drag and drop seluruh folder html yang ingin dideploy. 
+
+## **CSS**
+  
+- CSS adalah singkatan dari <i>Cascading Style Sheets</i>. CSS juga bisa diartikan sebagai bahasa komputer yang digunakan untuk menambahkan design ke suatu halaman website di internet. Dengan CSS, kita bisa mengubah warna, menggunakan font custom, editing text format, mengatur tata letak, dan lainnya.
+- **Menyisipkan CSS ke dalam file HTML**
+  - **Inline CSS** yaitu menggunakan attribute style untuk menyisipkan kode CSS langsung di dalam HTML element. Contoh penulisannya :
+    ```
+      <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Inline CSS</title>
+      </head>
+      <body>
+
+        <h1 style="color:pink;">Saya bahagia</h1>
+
+      </body>
+    </html>
+  ```
