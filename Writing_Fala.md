@@ -109,9 +109,8 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
 ## **HTML**
   
 - HTML adalah singkatan dari <i>Hyper Text Markup Language</i>. HTML sendiri bisa diartikan sebagai bahasa komputer yang digunakan untuk membuat kerangka atau struktur untuk Web pages (halaman website) di internet.
-- Ada 2 tools utama yang harus dipersiapkan untuk membuat HTML, yaitu Browser dan Code Editor.
-- Visual Studio Code adalah code editor yang dikembangkan oleh tim engineer Microsoft.
-- HTML Structure :
+- Ada 2 tools utama yang harus dipersiapkan untuk membuat HTML, yaitu Browser dan Code Editor. Visual Studio Code adalah code editor yang dikembangkan oleh tim engineer Microsoft.
+- **HTML Structure** :
   ```
    <!DOCTYPE html>
     <html lang="en">
@@ -128,8 +127,7 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
     </body>
     </html>
   ```
-- HTML Tag
-  - Tag adalah sebuah penanda awalan dan akhiran dari sebuah elemen di HTML yang biasanya dibuat dengan kurung siku (<...>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut. Dokumen HTML memiliki 3 tag utama, yaitu ``<html>``, ``<head>``, dan ``<body>``. Contoh penulisannya :
+- **HTML Tag** adalah sebuah penanda awalan dan akhiran dari sebuah elemen di HTML yang biasanya dibuat dengan kurung siku (<...>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut. Dokumen HTML memiliki 3 tag utama, yaitu ``<html>``, ``<head>``, dan ``<body>``. Contoh penulisannya :
   ```
     <!DOCTYPE html>
     <html lang="en">
@@ -144,8 +142,12 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
       </body>
       </html>
    ```
-- HTML Element 
-  - HTML Element merupakan sebuah komponen dalam halaman web, bisa berupa paragraf, judul, atau gambar.
+  Source code diatas terdiri dari :
+  - ``<!DOCTYPE>`` syntax mendefinisikan versi dari HTML yang digunakan dan harus dideklarasi sebelum tag <html>. <!DOCTYPE html>mendefinisikan bahwa dokumen ini adalah HTML5.
+  - ``<html></html>`` adalah root element dari halaman HTML. Semua HTML tag lainnya harus dibungkus dengan tag ini.
+  - ``<head>`` pada umumnya berisi ``<meta>``, ``<title>``, konten css/js internal maupun link ke file css/js eksternal.
+  - ``<body>`` berisi konten website yang ingin ditampilkan pada browser.
+- **HTML Element** merupakan sebuah komponen dalam halaman web, bisa berupa paragraf, judul, atau gambar.
 - Tag ``<br />`` digunakan untuk berganti baris (spasi).
 - Tag ``<img />`` digunakan untuk menampilkan element gambar.
 - HTML Attribute
