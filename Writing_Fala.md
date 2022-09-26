@@ -182,7 +182,7 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   ```
   <!-- Unordered List -->
   <ul>
-    <li>Mawae</li>
+    <li>Mawar</li>
     <li>Melati/li>
     <li>Anggrek</li>
   </ul>
