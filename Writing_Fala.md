@@ -194,7 +194,7 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
     <li>Ikan</li>
   </ol>
   ```
-- Tag untuk menampilkan gambar
+  - Tag untuk menampilkan gambar
   ```
   <img src="https://bit.ly/3j6eb3B" alt="Cat" />
   ```
