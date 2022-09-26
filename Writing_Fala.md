@@ -148,6 +148,21 @@ Dengan menggunakan GIT dan Github, seorang programmer akan bisa bekerja dalam se
   - ``<head>`` pada umumnya berisi ``<meta>``, ``<title>``, konten css/js internal maupun link ke file css/js eksternal.
   - ``<body>`` berisi konten website yang ingin ditampilkan pada browser.
 - **HTML Element** merupakan sebuah komponen dalam halaman web, bisa berupa paragraf, judul, atau gambar.
+  Struktur dari HTML Element bisa dituliskan seperti :
+  ```
+  <p style="color:red">This is a paragraph.</p>
+  HTML element diatas terdiri dari 
+  Opening Tag (tag pembuka) yaitu <p>.
+  Closing Tag (tag penutup) yaitu </p>.
+  Attribute yaitu style yang memiliki Value "color=red". 
+  Content (konten) yaitu tampilan yang ingin ditampilkan di browser, This is a paragraph.
+
+  ```
+  Pada umumnya, HTML Element terdiri dari Opening Tag (tag pembuka)contohnya adalah <p>.
+Closing Tag (tag penutup) - contohnya adalah </p>.
+Attribute - contohnya adalah style yang memiliki Value "color=red". HTML Attribute akan kita pelajari di topik selanjutnya.
+Content (konten) yang ingin ditampilkan di browser - contohnya adalah My first paragraph.
+
 - Tag ``<br />`` digunakan untuk berganti baris (spasi).
 - Tag ``<img />`` digunakan untuk menampilkan element gambar.
 - HTML Attribute
