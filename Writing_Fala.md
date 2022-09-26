@@ -229,4 +229,4 @@ Contoh source code HTML Semantic :
   </footer>
 
 </body>
-- **Deploy HTML** adalah sebuah proses untuk menyebarkan aplikasi yang sudah kita kerjakan supaya bisa digunakan oleh orang-orang. Untuk mendeploy,bisa menggunakan tools bernama Netlify. Cara menggunakannya yaitu masuk ke netlify.com lalu register seperti biasa menggunakan email atau github. Setelah itu masuk ke tab Sites lalu drag and drop seluruh folder html yang ingin dideploy. 
+- **Deploy** adalah sebuah proses untuk menyebarkan aplikasi yang sudah kita kerjakan supaya bisa digunakan oleh orang-orang. Untuk mendeploy,bisa menggunakan tools bernama Netlify. Cara menggunakannya yaitu masuk ke netlify.com lalu register seperti biasa menggunakan email atau github. Setelah itu masuk ke tab Sites lalu drag and drop seluruh folder html yang ingin dideploy. 
