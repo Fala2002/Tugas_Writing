@@ -421,3 +421,10 @@ Contoh source code HTML Semantic :
       color: red;
     }
     ```
+ - **CSS Display** , dalam hal dipslay ini kita bisa mengatur bagaimana box tersebut ditampilkan, apa box tersebut ditampilkan sebaris dengan box lain? atau satu box menempati satu baris penuh? bahkan kita juga bisa mengatur apakah box tersebut ditampilkan atau disembunyikan.
+  - Display:None, saat menggunakan properti display: none, tampilan dari element di sekitarnya juga ikut berubah. Karena saat kita menggunakan properti ini, halaman web akan ditampilkan seolah-olah element tersebut tidak ada. Ada sebuah tombol yang jika ditekan akan menyembunyikan dan menampilkan gambar di samping paragraf.
+  - Visibility:hidden, Saat kita memberi nilai hidden pada properti visibility di gambar,maka gambar tidak ditampilkan, namun ruang yang tadinya ia tempati tetap akan ada di situ. Karena ruang yang ia tempati masih ada, element paragraf di sebelahnya tidak akan berubah posisi.
+  - Display:block, Element yang memiliki properti display:block akan menempati satu baris penuh (atau bahkan beberapa baris) meskipun kontennya tidak sebesar itu.
+  - Display:inline, Keberadaan properti display:inline pada sebuah element akan membuat ukuran box dari element tersebut tidak lagi sebaris penuh seperti dalam kasus display: block, melainkan hanya sebesar konten di dalamnya saja. Hal ini memungkinkan adanya element lain untuk ditempatkan di sebelah element dengan display: inline ini.
+  - Display:inline-block, display:inline-block secara default hanya akan mengambil ruang sebesar konten di dalamnya. Dengan adanya sisa ruang di sebelah kiri atau kanannya, element dengan display:inline-block bisa ditempatkan bersebelahan dengan yang lainnya.
+ - **Flexbox CSS** , Flexbox memudahkan para programmer untuk mengatur layout, posisi, dan ukuran dari tiap element di dalamnya.  
