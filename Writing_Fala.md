@@ -326,7 +326,7 @@ Contoh source code HTML Semantic :
   ```
 
  - **Styling CSS** 
-  - **Memberi Style pada Semua Element** , Jika kita ingin memberikan style pada semua element di website, maka kita bisa menggunakan * sebagai selector. Contoh penulisannya :
+  - Memberi Style pada Semua Element, jika kita ingin memberikan style pada semua element di website, maka kita bisa menggunakan * sebagai selector. Contoh penulisannya :
     ```
       <!-- Pada File HTML -->
     <body>
@@ -345,25 +345,27 @@ Contoh source code HTML Semantic :
     }
     ```
   
-    Atau bisa juga dengan 
-  
-     ```
-        <!-- Pada File HTML -->
-      <body>
-        <h1>Selamat Datang di Website Pertamaku</h1>
+  - Memberi style di elemen dengan id tertentu. Contoh penulisannya :
+    ```
+      <!-- Pada File HTML -->
+    <body>
+      <h1>Selamat Datang di Website Pertamaku</h1>
 
-        <div>
-        <p>Namaku</p>
-        <p>
-            <span>Sarah</span>
-        </p>
-        </div>
+      <div class="highlight">
+        <p id="firstParagraph">Namaku Sarah</p>
+        <p id="secondParagraph">Saya tinggal di Indonesia</p>
+      </div>
 
-        <p>Saya tinggal bersama orang tua saya</p>
-      </body>
+      <p class="highlight">Saya tinggal bersama orang tua saya</p>
+    </body>
   
-        /* Pada File CSS */
-      div * {
-        background-color: yellow;
-      }
-      ```
+    /* Pada File CSS */
+    #firstParagraph {
+      border: solid yellow;
+    }
+
+    #secondParagraph {
+      border: solid pink;
+    }
+    ```
+  
