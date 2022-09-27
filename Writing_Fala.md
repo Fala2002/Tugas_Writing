@@ -306,5 +306,21 @@ Contoh source code HTML Semantic :
     }
     ```
 
-  - Syntax CSS
+- **Syntax CSS** adalah syntax yang digunakan untuk menunjuk atau memilih HTML element mana yang ingin diberi style (dihias). CSS syntax terdiri dari selector, property, dan value. Penulisan syntaxnya :
+  ```
+    selector {
+    property: value;
+  }
+  ```
+  Atau bisa juga
+  ```
+  <!-- Pada file HTML -->
+    <p>Hello Falaaa</p>
+  ```
   
+  ```
+  /* Pada file CSS */
+    p {
+      color: blue;
+    }
+  ```
