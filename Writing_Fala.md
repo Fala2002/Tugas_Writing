@@ -427,4 +427,14 @@ Contoh source code HTML Semantic :
     - Display:block, Element yang memiliki properti display:block akan menempati satu baris penuh (atau bahkan beberapa baris) meskipun kontennya tidak sebesar itu.
     - Display:inline, Keberadaan properti display:inline pada sebuah element akan membuat ukuran box dari element tersebut tidak lagi sebaris penuh seperti dalam kasus display: block, melainkan hanya sebesar konten di dalamnya saja. Hal ini memungkinkan adanya element lain untuk ditempatkan di sebelah element dengan display: inline ini.
     - Display:inline-block, display:inline-block secara default hanya akan mengambil ruang sebesar konten di dalamnya. Dengan adanya sisa ruang di sebelah kiri atau kanannya, element dengan display:inline-block bisa ditempatkan bersebelahan dengan yang lainnya.
- - **Flexbox CSS** , Flexbox memudahkan para programmer untuk mengatur layout, posisi, dan ukuran dari tiap element di dalamnya.  
+ - **Flexbox CSS** , Flexbox memudahkan para programmer untuk mengatur layout, posisi, dan ukuran dari tiap element di dalamnya. Flexbox memiliki 1 parent/container dan bisa beberapa child/item.
+    - flex-direction, digunakan untuk mengatur letak item child.
+    - flex-wrap, flex secara default akan membuat tata letak item children dalam 1 line saja. Flex akan menyesuaikan space yang ada. Namun jika ingin membatasi jumlah item children dalam 1 line lalu item children yang lain akan pindah ke posisi line yang baru, maka kita bisa menggunakan flex-wrap.
+    - flex-flow, properti flex-flow digunakan sebagai shortcut untuk set up flex-direction dan flex-wrap bersamaan.
+    - order, berfungsi untuk ordering item mana yang ingin kita atur posisinya berdasarkan urutan order.
+    - justify-content, digunakan untuk mengatur tata letak dan space antar item child secara horizontal atau main axis.
+    - flex-start, posisi item akan dikemas pada bagian awal flex-direction.
+    - flex-end, posisi item akan dikemas pada bagian akhir 
+    - center, posisi item akan dikemas ke bagian tengah baris.
+    - space-between, akan memberi ruang pada setiap dua item yang bersebelahan.
+    - space-around, akan memberi ruang pada sekitar tiap item.
