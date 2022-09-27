@@ -290,7 +290,18 @@ Contoh source code HTML Semantic :
       <body>
 
         <h1>Saya Fala Alma'as Liyanti</h1>
+        <h2>Dari Back-End Developement</h2>
 
       </body>
     </html>
+  ```
+
+  ```
+  /* File style.css */
+  h1 {
+    color : brown;
+  }
+  h2 {
+    color : blue;
+  }
   ```
