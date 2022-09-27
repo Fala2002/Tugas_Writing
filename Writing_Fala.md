@@ -369,7 +369,7 @@ Contoh source code HTML Semantic :
     }
     ```
   
-  - Memberi style di elemen dengan class tertentu.
+  - Memberi style di elemen dengan class tertentu. Contoh penulisannya :
     ```
         <!-- Pada File HTML -->
     <body>
@@ -387,5 +387,37 @@ Contoh source code HTML Semantic :
     .highlight {
       background-color: black;
       color: white;
+    }
+    ```
+
+  - Memberi style di elemen dengan attribute tertentu. Contoh penulisannya :
+    ```
+        <!-- Pada File HTML -->
+    <body>
+      <a>Whatsapp</a>
+      <a href="https://www.facebook.com">Facebook</a>
+      <a href="https://www.quora.com">quora</a>
+    </body>
+    /* Pada File CSS */
+    a[href] {
+      background-color: green;
+    }
+    ```
+  
+  - Memberi style yang sama di lebih dari satu elemen sekaligus. Contoh penulisannya :
+    ```
+        <!-- Pada File HTML -->
+    <body>
+      <h1>Selamat Datang</h1>
+      <p>Silahkan scroll ke bawah untuk informasi lebih lanjut</p>
+
+      <h2>Cara Reservasi</h2>
+      <p>Reservasi bisa dilakukan dengan menghubungi nomor 08122282xxx</p>
+    </body>
+  
+    /* Pada File CSS */
+    h1,
+    h2 {
+      color: red;
     }
     ```
