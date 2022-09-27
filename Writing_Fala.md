@@ -279,29 +279,29 @@ Contoh source code HTML Semantic :
     ```
   
   - **External CSS** yaitu cara menyisipkan kode CSS dengan cara membuat file CSS terpisah, dan lalu menyambungkannya dengan file HTML dengan menggunakan element ``<link>``. Element ``<link>`` tersebut diletakkan di dalam element ``<head>``. Contoh penulisannya :
-  ```
-  /* File HTML */
-      <!DOCTYPE html>
-    <html>
-      <head>
-        <title>External CSS</title>
-        <link rel="stylesheet" href="style.css" />
-      </head>
-      <body>
+    ```
+    /* File HTML */
+       <!DOCTYPE html>
+      <html>
+        <head>
+          <title>External CSS</title>
+          <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
 
-        <h1>Saya Fala Alma'as Liyanti</h1>
-        <h2>Dari Back-End Developement</h2>
+          <h1>Saya Fala Alma'as Liyanti</h1>
+          <h2>Dari Back-End Developement</h2>
 
-      </body>
-    </html>
-  ```
+        </body>
+      </html>
+    ```
 
-  ```
-  /* File style.css */
-  h1 {
-    color : brown;
-  }
-  h2 {
-    color : blue;
-  }
-  ```
+    ```
+    /* File style.css */
+    h1 {
+      color : brown;
+    }
+    h2 {
+      color : blue;
+    }
+    ```
