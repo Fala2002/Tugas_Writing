@@ -441,4 +441,26 @@ Contoh source code HTML Semantic :
 
 ## **Javascript Dasar**
   
- ### *Javascript Intro** 
+### *Javascript Intro**
+  - Javascript adalah bahasa pemograman yang sangat powerful yang digunakan untuk logic pada sebuah website. JavaScript juga bisa diartikan sebagai bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. 
+  - Cara menjalankan javascript yaitu bisa melalui browser pada device setiap user. Namun browser Chrome dan Mozilla adalah browser yang biasanya digunakan karena mereka sudah support untuk semua fitur Javascript.
+  - Dalam Javascript terdapat syntax dan statement. Syntax adalah kosa kata (vocabulary) dan tata cara (grammar) pada bahasa pemograman. Syntax dapat digunakan untuk membuat statement program, instruksi untuk djalankan/dieksekusi oleh web browser, compiler, ataupun intrepreter. Contoh syntax yaitu Alert(), Prompt(), Confirm().
+  - Console log adalah tempat untuk cek logic pemograman web yang kita kembangkan. Selain itu, Console log juga tempat untuk melakukan debugging (mengetahui error pada code) pada pemograman web.
+  - Comments adalah sintaks yang digunakan untuk memberi keterangan tentang suatu statement. Comments dibedakan menjadi dua, yaitu Single comments (//) dan Multiline comments (/* */)
+  - **Tipe data javascript** adalah klasifikasi yang diberikan untuk berbagai macam data yang digunakan dalam programming. Terdapat 6 tipe data pada Javascript, antara lain :
+    - **Number** adalah tipe data yang mengandung semua angka termasuk angka desimal. Contoh: 2, 4, 1200, 23.42
+    - **String** adalah grup karakter yang ada pada keyboard laptop/PC yaitu letters (huruf), number (angka), spaces (spasi), symbol, dan lainnya. Harus diawali dan diakhiri dengan single quotes ‘ … ‘ ataupun double quotes “ … “.
+    - **Boolean** adalah tipe data yang hanya mempunyai 2 buah nilai yaitu TRUE (benar) or FALSE (salah). Analoginya adalah seperti tombol/button ON/OFF dan juga seperti sebuah jawaban antara YES/NO.
+    - **Null** adalah tipe data yang diartikan bahwa sebuah variable/data tidak memiliki nilai. Null berbeda dengan string kosong. String kosong masih memiliki tipe data string.
+    - **Undefined** adalah tipe data yang merepresentasikan varibel/data yang tidak memiliki nilai. Tipe data undefined biasanya didapat dari hasil kesalahan program (error), kelalaian programmer, dan tidak direncanakan.
+    - **Object** koleksi data yang saling berhubungan (related). Tipe data pbject dapat menyimpan data dengan tipe data apapun (number, string, boolean, dan lainnya).
+  - **Variable javascript** adalah container/tempat untuk menyimpan sebuah nilai. Ada 3 cara dalam mendefinisikan variable, yaitu :
+    - Var
+    - Const
+    - Let
+  - **Operator pada javascript** 
+    - **Assignment operator**,  digunakan untuk memberikan nilai pada variabel.
+      - 
+
+
+
