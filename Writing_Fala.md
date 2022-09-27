@@ -345,25 +345,25 @@ Contoh source code HTML Semantic :
     }
     ```
   
-  Atau bisa juga dengan 
+    Atau bisa juga dengan 
   
-    ```
-      <!-- Pada File HTML -->
-    <body>
-      <h1>Selamat Datang di Website Pertamaku</h1>
+     ```
+        <!-- Pada File HTML -->
+      <body>
+        <h1>Selamat Datang di Website Pertamaku</h1>
 
-      <div>
-      <p>Namaku</p>
-      <p>
-          <span>Sarah</span>
-      </p>
-      </div>
+        <div>
+        <p>Namaku</p>
+        <p>
+            <span>Sarah</span>
+        </p>
+        </div>
 
-      <p>Saya tinggal bersama orang tua saya</p>
-    </body>
+        <p>Saya tinggal bersama orang tua saya</p>
+      </body>
   
-      /* Pada File CSS */
-    div * {
-      background-color: yellow;
-    }
-    ```
+        /* Pada File CSS */
+      div * {
+        background-color: yellow;
+      }
+      ```
