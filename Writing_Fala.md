@@ -369,3 +369,23 @@ Contoh source code HTML Semantic :
     }
     ```
   
+  - Memberi style di elemen dengan class tertentu.
+    ```
+        <!-- Pada File HTML -->
+    <body>
+      <h1>Selamat Datang di Website Pertamaku</h1>
+
+      <div class="highlight">
+        <p>Saya tinggal di benua Asia</p>
+        <p>Persisnya di Indonesia</p>
+      </div>
+
+      <p class="highlight">Saya tinggal bersama orang tua saya</p>
+    </body>
+  
+    /* Pada File CSS */
+    .highlight {
+      background-color: black;
+      color: white;
+    }
+    ```
