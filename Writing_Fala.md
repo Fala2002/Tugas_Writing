@@ -275,5 +275,6 @@ Contoh source code HTML Semantic :
         <p>Selamat Datang</p>
       </body>
     </html>
+    Pada script diatas menghasilkan ``<body>`` dengan latar belakang berwarna kuning, tulisan di dalam ``<h1>`` berwarna biru, dan tulisan di dalam ``<p>`` berwarna merah.
     ```
   
