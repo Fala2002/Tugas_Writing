@@ -343,9 +343,11 @@ Contoh source code HTML Semantic :
     * {
       background-color: green;
     }
-  ```
+    ```
+  
   Atau bisa juga dengan 
-  ```
+  
+    ```
       <!-- Pada File HTML -->
     <body>
       <h1>Selamat Datang di Website Pertamaku</h1>
@@ -357,11 +359,11 @@ Contoh source code HTML Semantic :
       </p>
       </div>
 
-    <p>Saya tinggal bersama orang tua saya</p>
+      <p>Saya tinggal bersama orang tua saya</p>
     </body>
   
-    /* Pada File CSS */
-   div * {
-    background-color: yellow;
-   }
-  ```
+      /* Pada File CSS */
+    div * {
+      background-color: yellow;
+    }
+    ```
