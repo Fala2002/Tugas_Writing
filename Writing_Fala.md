@@ -324,3 +324,44 @@ Contoh source code HTML Semantic :
       color: blue;
     }
   ```
+
+ - **Styling CSS** 
+  - **Memberi Style pada Semua Element** , Jika kita ingin memberikan style pada semua element di website, maka kita bisa menggunakan * sebagai selector. Contoh penulisannya :
+    ```
+      <!-- Pada File HTML -->
+    <body>
+      <h1>Selamat Datang di Website Pertamaku</h1>
+
+      <div>
+        <p>Namaku Sarah</p>
+        <p>Saya tinggal di Indonesia</p>
+      </div>
+
+      <p>Saya tinggal bersama orang tua saya</p>
+    </body>
+    /* Pada File CSS */
+    * {
+      background-color: green;
+    }
+  ```
+  Atau bisa juga dengan 
+  ```
+      <!-- Pada File HTML -->
+    <body>
+      <h1>Selamat Datang di Website Pertamaku</h1>
+
+      <div>
+      <p>Namaku</p>
+      <p>
+          <span>Sarah</span>
+      </p>
+      </div>
+
+    <p>Saya tinggal bersama orang tua saya</p>
+    </body>
+  
+    /* Pada File CSS */
+   div * {
+    background-color: yellow;
+   }
+  ```
