@@ -252,6 +252,7 @@ Contoh source code HTML Semantic :
   
   Pada script diatas, output yang dihasilkan adalah teks dengan tulisan Saya bahagia serta berwarna pink.
   ```
+  
   - **Internal CSS** yaitu element ``<style>`` untuk menyisipkan kode CSS. Element ``<style>`` biasanya diletakkan di dalam element ``<head>``. Contoh penulisannya :
     ```
       <!DOCTYPE html>
