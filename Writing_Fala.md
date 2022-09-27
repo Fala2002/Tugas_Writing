@@ -438,3 +438,7 @@ Contoh source code HTML Semantic :
     - center, posisi item akan dikemas ke bagian tengah baris.
     - space-between, akan memberi ruang pada setiap dua item yang bersebelahan.
     - space-around, akan memberi ruang pada sekitar tiap item.
+
+## **Javascript Dasar**
+  
+ ### *Javascript Intro** 
