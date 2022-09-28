@@ -329,6 +329,9 @@ Contoh source code HTML Semantic :
   - Memberi Style pada Semua Element, jika kita ingin memberikan style pada semua element di website, maka kita bisa menggunakan * sebagai selector. Contoh penulisannya :
     ```
       <!-- Pada File HTML -->
+     <head>
+       <link rel="stylesheet"href="style.css" />
+    </head>
     <body>
       <h1>Selamat Datang di Website Pertamaku</h1>
 
@@ -348,6 +351,9 @@ Contoh source code HTML Semantic :
   - Memberi style di elemen dengan id tertentu. Contoh penulisannya :
     ```
       <!-- Pada File HTML -->
+    <head>
+      <link rel="stylesheet"href="style.css" />
+    </head>
     <body>
       <h1>Selamat Datang di Website Pertamaku</h1>
 
@@ -372,6 +378,9 @@ Contoh source code HTML Semantic :
   - Memberi style di elemen dengan class tertentu. Contoh penulisannya :
     ```
         <!-- Pada File HTML -->
+    <head>
+      <link rel="stylesheet"href="style.css" />
+    </head>
     <body>
       <h1>Selamat Datang di Website Pertamaku</h1>
 
@@ -393,6 +402,9 @@ Contoh source code HTML Semantic :
   - Memberi style di elemen dengan attribute tertentu. Contoh penulisannya :
     ```
         <!-- Pada File HTML -->
+    <head>
+      <link rel="stylesheet"href="style.css" />
+    </head>
     <body>
       <a>Whatsapp</a>
       <a href="https://www.facebook.com">Facebook</a>
@@ -400,13 +412,16 @@ Contoh source code HTML Semantic :
     </body>
     /* Pada File CSS */
     a[href] {
-      background-color: green;
+      background-color: red;
     }
     ```
   
   - Memberi style yang sama di lebih dari satu elemen sekaligus. Contoh penulisannya :
     ```
         <!-- Pada File HTML -->
+    <head>
+      <link rel="stylesheet"href="style.css" />
+    </head>
     <body>
       <h1>Selamat Datang</h1>
       <p>Silahkan scroll ke bawah untuk informasi lebih lanjut</p>
