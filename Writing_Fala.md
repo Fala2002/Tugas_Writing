@@ -531,16 +531,73 @@ Contoh source code HTML Semantic :
         console.log(bilangan < 12); // Output: false
         console.log(bilangan <15); // Outout : true
         ```
-      - Lebih besar dari (>)
-      - Lebih kecil atau sama dengan (<=)
-      - Lebih besar atau sama dengan (>=)
-      - Sama dengan (===)
-      - Tidak sama dengan (!==)
-    - **Logical Operator** biasanya digunakan untuk sebuah CONDITIONAL pada pemograman. Menghasilkan nilai BOOLEAN yaitu TRUE or FALSE.
+      - Lebih besar dari atau lebih dari (>). Contoh penulisannya :
+        ```
+        let bilangan = 8;
 
+        console.log(bilangan > 5); // Output : true
+        console.log(bilangan > 10) //Output : false
+        ```
+      - Lebih kecil atau sama dengan bisa juga kurang dari atau sama dengan (<=). Contoh penulisannya :
+        ```
+        let bilangan = 10;
 
+        console.log(bilangan <= 10); // Output : true
+        console.log(bilangan <= 9); // Output : false
+        ```
+      - Lebih besar atau sama dengan bisa juga lebih besar dari atau sama dengan (>=). Contoh penulisannya :
+        ```
+        let bilangan = 15;
 
+        console.log(bilangan >= 10); // Output : true
+        console.log(bilangan >= 20); // Output : false
+        ```
+      - Sama dengan atau Strict Equality (===). Dalam hal ini, ia hanya fokus pada tipe datanya. Meskipun nilainya sama tetapi tipe datanya berbeda maka tetap akan bernilai false. Contoh penulisannya :
+        ```
+        let bilangan = 20;
 
+        console.log(bilangan === 20); // Output: true --> nilai dan tipe data sama
+        console.log(bilangan === "20"); // Output: false --> nilai sama tetapi tipe data tidak sama
+        ```
+     - Sama dengan atau Loose Equality (==). Dalam hal ini, ia hanya fokus pada nilainya, tidak dengan tipe datanya. Contoh penulisannya :
+        ```
+        let bilangan = 5;
 
+        console.log(bilangan == 5); // Output: true
+        console.log(bilangan == 8); // Output: false
+        console.log(bilangan == "5"); // Output: true
+        ```
+      - Tidak sama dengan (!=). Pada operator != akan menghasilkan output false apabila kedua operand memiliki nilai yang sama, tidak terpengaruh dengan tipe datanya. Contoh penulisannya :
+        ```
+        let bilangan = 10;
 
-      
+        console.log(bilangan != 8); // Output: true --> nilai tidak sama tetapi tipe data sama
+        console.log(bilangan != "8"); // Output: true --> nilai dan tipe data tidak sama
+        console.log(bilangan != 10); // Output: false --> nilai dan tipe data sama
+        console.log(bilangan != "10"); // Output: false --> nilai sama tetapi tipe data tidak sama
+        ```
+      - Tidak sama dengan sama dengan (!==). Operator ini hanya akan mengeluarkan output false apabila nilai dan tipe data dari kedua operand sama. Contoh penulisannya:
+        ```
+        let bilangan = 10;
+
+        console.log(bilangan !== 8); // Output: true --> nilai tidak sama tetapi tipe data sama
+        console.log(bilangan !== "8"); // Output: true --> nilai dan tipe data tidak sama
+        console.log(bilangan !== 10); // Output: false --> nilai dan tipe data sama
+        console.log(bilangan !== "10"); // Output: true --> nilai sama tetapi tipe data tidak sama
+        ```
+    - **Logical Operator** biasanya digunakan untuk sebuah CONDITIONAL pada pemograman. Menghasilkan nilai BOOLEAN yaitu TRUE or FALSE. Operator ini dibagi menjadi tiga, yaitu 
+      - AND (&&), akan menghasilkan nilai true jika kedua atau semua premis bernilai TRUE.
+      - OR (||), akan menghasilkan nilai true jika salah satu premis mengandung nilai TRUE.
+      - NOT (!), akan membalikkan sebuah nilai BOOLEAN. TRUE menjadi FALSE dan sebaliknya. Operator ini akan bernilai true apabila operand-nya bernilai false (negation). Dan sebaliknya, operator akan mengembalikan false apabila operand-nya bernilai true.
+  - **Conditional** adalah statement percabangan yang menggambarkan suatu kondisi. Conditional statement akan mengecek kondisi spesifik dan menjalankan perintah berdasarkan kondisi tersebut. Di JavaScript ada dua cara menulis perintah conditional, yaitu:
+    - Menggunakan if, else if dan else.
+      - IF, Digunakan apabila hanya ada 1 kondisi dan 1 keputusan yang dijalankan. Contoh penulisannya :
+        ```
+        let haus :true;
+        if (haus) {
+        console.log('Ambil Minum');
+        };
+        ```
+
+Menggunakan switch dan case.
+  
