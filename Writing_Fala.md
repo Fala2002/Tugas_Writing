@@ -636,5 +636,5 @@ Contoh source code HTML Semantic :
   		        console.log ("warna tidak ditemukan");
   	      }
           ```
-
+  - **Looping** adalah sekumpulan kode yang akan dijalankan berulang kali sampai batas yang ditentukan.
   
