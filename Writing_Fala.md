@@ -590,14 +590,51 @@ Contoh source code HTML Semantic :
       - OR (||), akan menghasilkan nilai true jika salah satu premis mengandung nilai TRUE.
       - NOT (!), akan membalikkan sebuah nilai BOOLEAN. TRUE menjadi FALSE dan sebaliknya. Operator ini akan bernilai true apabila operand-nya bernilai false (negation). Dan sebaliknya, operator akan mengembalikan false apabila operand-nya bernilai true.
   - **Conditional** adalah statement percabangan yang menggambarkan suatu kondisi. Conditional statement akan mengecek kondisi spesifik dan menjalankan perintah berdasarkan kondisi tersebut. Di JavaScript ada dua cara menulis perintah conditional, yaitu:
-    - Menggunakan if, else if dan else.
+    - Menggunakan if, if else dan if else if.
       - IF, Digunakan apabila hanya ada 1 kondisi dan 1 keputusan yang dijalankan. Contoh penulisannya :
         ```
         let haus :true;
         if (haus) {
-        console.log('Ambil Minum');
+          console.log('Ambil Minum');
         };
         ```
+      - If else, Digunakan apabila ada 1 kondisi dan 2 keputusan yang dijalankan. Contoh penulisannya :
+        ```
+        let haus :false;
+        if (haus) {
+          console.log('Ambil Minum');
+        } else {
+          console.log('Jangan Minum');
+        }
+        ```
+      - If else if, Digunakan apabila ada beberapa kondisi dan beberapa keputusan yang dijalankan. Contoh penulisannya :
+        ```
+        let perasaan = "sayang";
+        if (perasaan=== "sayang") {
+          console.log("kita pacaran"); 
+        } else if(perasaan=== "bosan") {
+          console.log("kita udahan"); 
+        } else {
+          console.log("cuma teman");
+        }
+        ```
+   - Menggunakan switch dan case.
+      - switch case digunakan jika kondisi dan percabangan terlalu banyak. Contoh penulisannya "
+        ```
+        let warna = "hijau";
+        switch(warna)  {
+  		    case "biru":
+  			    console.log ("warna biru");
+  			    break;
+  		    case "putih":
+  			    console.log ("warna putih");
+  			    break;
+  		    case "abu-abu":
+  			    console.log ("warna abu-abu");
+  			    break;
+  		    default:
+  		      console.log ("warna tidak ditemukan");
+  	    }
+        ```
 
-Menggunakan switch dan case.
   
