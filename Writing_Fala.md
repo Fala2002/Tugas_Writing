@@ -559,7 +559,7 @@ Contoh source code HTML Semantic :
         console.log(bilangan === 20); // Output: true --> nilai dan tipe data sama
         console.log(bilangan === "20"); // Output: false --> nilai sama tetapi tipe data tidak sama
         ```
-     - Sama dengan atau Loose Equality (==). Dalam hal ini, ia hanya fokus pada nilainya, tidak dengan tipe datanya. Contoh penulisannya :
+      - Sama dengan atau Loose Equality (==). Dalam hal ini, ia hanya fokus pada nilainya, tidak dengan tipe datanya. Contoh penulisannya :
         ```
         let bilangan = 5;
 
