@@ -479,6 +479,33 @@ Contoh source code HTML Semantic :
       let nama = "Fala";
       let umur = 20;
   
-      console.log(nama, umur)
+      console.log(nama, umur);
+      ```
+    - **Addition Assignment** digunakan untuk operasi penjumlahan. Addition Assignment bisa disimbolkan dengan ``+=``. Contoh penulisannya :
+      ```
+      let angka : 15;
+      angka += 10;
+  
+      console.log(angka);
+      ```
+    - **Substraction Assignment** digunakan untuk operasi pengurangan. Substraction Assignment bisa disimbolkan dengan ``-=``. Contoh penulisannya :
+      ```
+      let bilangan : 25;
+      bilangan -= 5;
+  
+      console.log(bilangan);
+    - **Multiplication Assignment** digunakan untuk operasi perkalian. Multiplication Assignment bisa disimbolkan dengan `` *=``. Contoh penulisannya :
+      ```
+      let umur : 18;
+      umur *= 2;
+  
+      console.log(umur);
+      ```
+    - **Division Assignment** digunakan untuk operasi pembagian. Division Assignment bisa disimbolkan dengan ``/=``. Contoh penulisannya :
+      ```
+      let bilangan : 50;
+      bilangan /= 2;
+  
+      console.log(bilangan);
       ```
   
