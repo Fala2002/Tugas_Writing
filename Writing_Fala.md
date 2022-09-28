@@ -483,27 +483,27 @@ Contoh source code HTML Semantic :
       ```
     - **Addition Assignment** digunakan untuk operasi penjumlahan. Addition Assignment bisa disimbolkan dengan ``+=``. Contoh penulisannya :
       ```
-      let angka : 15;
+      let angka = 15;
       angka += 10;
   
       console.log(angka);
       ```
     - **Substraction Assignment** digunakan untuk operasi pengurangan. Substraction Assignment bisa disimbolkan dengan ``-=``. Contoh penulisannya :
       ```
-      let bilangan : 25;
+      let bilangan = 25;
       bilangan -= 5;
   
       console.log(bilangan);
     - **Multiplication Assignment** digunakan untuk operasi perkalian. Multiplication Assignment bisa disimbolkan dengan `` *=``. Contoh penulisannya :
       ```
-      let umur : 18;
+      let umur = 18;
       umur *= 2;
   
       console.log(umur);
       ```
     - **Division Assignment** digunakan untuk operasi pembagian. Division Assignment bisa disimbolkan dengan ``/=``. Contoh penulisannya :
       ```
-      let bilangan : 50;
+      let bilangan = 50;
       bilangan /= 2;
   
       console.log(bilangan);
@@ -591,16 +591,16 @@ Contoh source code HTML Semantic :
       - NOT (!), akan membalikkan sebuah nilai BOOLEAN. TRUE menjadi FALSE dan sebaliknya. Operator ini akan bernilai true apabila operand-nya bernilai false (negation). Dan sebaliknya, operator akan mengembalikan false apabila operand-nya bernilai true.
   - **Conditional** adalah statement percabangan yang menggambarkan suatu kondisi. Conditional statement akan mengecek kondisi spesifik dan menjalankan perintah berdasarkan kondisi tersebut. Di JavaScript ada dua cara menulis perintah conditional, yaitu:
     - Menggunakan if, if else dan if else if.
-      - IF, Digunakan apabila hanya ada 1 kondisi dan 1 keputusan yang dijalankan. Contoh penulisannya :
+      - If, Digunakan apabila hanya ada 1 kondisi dan 1 keputusan yang dijalankan. Contoh penulisannya :
         ```
-        let haus :true;
+        let haus = true;
         if (haus) {
           console.log('Ambil Minum');
         };
         ```
       - If else, Digunakan apabila ada 1 kondisi dan 2 keputusan yang dijalankan. Contoh penulisannya :
         ```
-        let haus :false;
+        let haus = false;
         if (haus) {
           console.log('Ambil Minum');
         } else {
@@ -610,9 +610,9 @@ Contoh source code HTML Semantic :
       - If else if, Digunakan apabila ada beberapa kondisi dan beberapa keputusan yang dijalankan. Contoh penulisannya :
         ```
         let perasaan = "sayang";
-        if (perasaan=== "sayang") {
+        if (perasaan === "sayang") {
           console.log("kita pacaran"); 
-        } else if(perasaan=== "bosan") {
+        } else if(perasaan === "bosan") {
           console.log("kita udahan"); 
         } else {
           console.log("cuma teman");
@@ -636,5 +636,33 @@ Contoh source code HTML Semantic :
   		        console.log ("warna tidak ditemukan");
   	      }
           ```
-  - **Looping** adalah sekumpulan kode yang akan dijalankan berulang kali sampai batas yang ditentukan.
+  - **Looping** adalah sekumpulan kode yang akan dijalankan berulang kali sampai batas yang ditentukan. Looping juga dapat diartikan sebagai statement yang mengulang sebuah instruksi hingga kondisi terpenuhi atau jika kondisi stop/berhenti tercapai. Macam-macam loop antara lain:
+    -  For loop, digunakan apabila sudah tahu seberapa banyak nilai pasti untuk pengulangannya. Contohnya :
+        ```
+        let angka = 1;
+        for (angka; angka <= 8; i++) {
+          console.log(angka);
+        }
+        ```
+    - While loop, akan menjalankan instruksi pengulangan kondisi bernilai true. While loop digunakan apabila tidak mengetahui jumlah pasti pengulangan. Contohnya :
+      ```
+      let angka = 5;
+      while (angka <= 10)) {
+        console.log(angka);
+        angka++;
+      }
+      ```
+    - Do while, Perulangan do while akan melakukan perulangan sebanyak 1 kali terlebih dahulu, lalu mengecek kondisi yang ada di dalam kurung while.
+      ```
+      let angka = [];
+      let i = 5;
+
+      do {
+      angka.push(i);
+      i++;
+      } while (i <= 10) {
+      console.log(i)
+      }
+      ```
+    - Nested loop, digunakan jika ingin membuat perulangan di dalam perulangan.
   
