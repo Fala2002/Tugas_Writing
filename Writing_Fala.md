@@ -640,7 +640,7 @@ Contoh source code HTML Semantic :
     -  For loop, digunakan apabila sudah tahu seberapa banyak nilai pasti untuk pengulangannya. Contohnya :
         ```
         let angka = 1;
-        for (angka; angka <= 8; i++) {
+        for (angka; angka <= 8; angka++) {
           console.log(angka);
         }
         ```
