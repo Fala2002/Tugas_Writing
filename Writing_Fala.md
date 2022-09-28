@@ -508,4 +508,39 @@ Contoh source code HTML Semantic :
   
       console.log(bilangan);
       ```
-  
+    - **Modulus Assignment** digunakan untuk melihat sisa bagi dari suatu bilangan. Modulus assignment bisa disimbolkan dengan ``%=``. Contoh penulisannya :
+      ```
+      let bilangan = 30;
+      bilangan %= 5;
+
+      console.log(bilangan);
+      ```
+    - **Increment dan Decrement** digunakan untuk menambah atau mengurangi sebesar 1 nilai. Contoh penulisannya :
+      ```
+      let a = 15;
+      a++;
+      console.log(a)
+      ```
+    - **Arithmetic Operator** adalah operator yang melibatkan operasi matematika. Misalnya Tambah (+), Kuramg (-), Perkalian (*), Pembagian (/), Modulus (%).
+    - **Comparison Operator** adalah operator yang membandingkan satu nilai dengan nilai lainnya. Hasil operasi yang melibatkan comparison operator adalah antara true or false.
+    - **Simbol comparison operator**
+      - Lebih kecil dari atau bisa juga kurang dari (<). Contoh penulisannya :
+        ```
+        let bilangan = 12;
+
+        console.log(bilangan < 12); // Output: false
+        console.log(bilangan <15); // Outout : true
+        ```
+      - Lebih besar dari (>)
+      - Lebih kecil atau sama dengan (<=)
+      - Lebih besar atau sama dengan (>=)
+      - Sama dengan (===)
+      - Tidak sama dengan (!==)
+    - **Logical Operator** biasanya digunakan untuk sebuah CONDITIONAL pada pemograman. Menghasilkan nilai BOOLEAN yaitu TRUE or FALSE.
+
+
+
+
+
+
+      
