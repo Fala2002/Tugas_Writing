@@ -456,7 +456,7 @@ Contoh source code HTML Semantic :
 
 ## **Javascript Dasar**
   
-### *Javascript Intro**
+  ### *Javascript Intro**
   - Javascript adalah bahasa pemograman yang sangat powerful yang digunakan untuk logic pada sebuah website. JavaScript juga bisa diartikan sebagai bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. 
   - Cara menjalankan javascript yaitu bisa melalui browser pada device setiap user. Namun browser Chrome dan Mozilla adalah browser yang biasanya digunakan karena mereka sudah support untuk semua fitur Javascript.
   - Dalam Javascript terdapat syntax dan statement. Syntax adalah kosa kata (vocabulary) dan tata cara (grammar) pada bahasa pemograman. Syntax dapat digunakan untuk membuat statement program, instruksi untuk djalankan/dieksekusi oleh web browser, compiler, ataupun intrepreter. Contoh syntax yaitu Alert(), Prompt(), Confirm().
@@ -474,7 +474,7 @@ Contoh source code HTML Semantic :
     - Const
     - Let
   - **Operator pada javascript** 
-    - **Assignment operator**,  digunakan untuk memberikan nilai pada variabel.
+    - **Assignment operator** digunakan untuk memberikan nilai pada variabel.
       - 
 
 
