@@ -618,23 +618,23 @@ Contoh source code HTML Semantic :
           console.log("cuma teman");
         }
         ```
-   - Menggunakan switch dan case.
-      - switch case digunakan jika kondisi dan percabangan terlalu banyak. Contoh penulisannya "
-        ```
-        let warna = "hijau";
-        switch(warna)  {
-  		    case "biru":
-  			    console.log ("warna biru");
-  			    break;
-  		    case "putih":
-  			    console.log ("warna putih");
-  			    break;
-  		    case "abu-abu":
-  			    console.log ("warna abu-abu");
-  			    break;
-  		    default:
-  		      console.log ("warna tidak ditemukan");
-  	    }
-        ```
+      - Menggunakan switch dan case.
+        - switch case digunakan jika kondisi dan percabangan terlalu banyak. Contoh penulisannya "
+          ```
+          let warna = "hijau";
+          switch(warna)  {
+  		      case "biru":
+  			      console.log ("warna biru");
+  			      break;
+  		      case "putih":
+  			      console.log ("warna putih");
+  			      break;
+  		      case "abu-abu":
+  			      console.log ("warna abu-abu");
+  			      break;
+  		      default:
+  		        console.log ("warna tidak ditemukan");
+  	      }
+          ```
 
   
