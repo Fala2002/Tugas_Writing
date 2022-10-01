@@ -15,16 +15,16 @@
     
     <div class="container"></div>
     <div class="container"></div>
- </body>
- ```
+  </body>
+  ```
  
  - Dalam hal ini terdapat beberapa cara untuk mencari elemen html, yaitu 
    - Mencari 1 element dengan id tertentu. Dengan ``document.getElementById("header")``
    - Mencari beberapa element sekaligus dengan class tertentu. Dengan ``documents.getElementsByClassName("container")``
-   - Mencari element menggunakan kombinasi selector seperti pada CSS ``document.querySelector("#header p span")
+   - Mencari element menggunakan kombinasi selector seperti pada CSS ``document.querySelector("#header p span")``
  Selain itu juga terdapat beberapa cara untuk memanggil DOM Value, antara lain 
  - Memanggil tag HTML berdasarkan ID ``console.log(document.getElementByID("header))``
- - Memanggil tag HTML berdasarkan Class Name ``console.log(document.getElementByClassName("container"))
+ - Memanggil tag HTML berdasarkan Class Name ``console.log(document.getElementByClassName("container"))``
  - Memanggil tag html berdasarkan query selector ``console.log(document.querySelector("#header "))``
  
  - **Mengubah Konten Element** 
