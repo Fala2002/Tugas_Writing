@@ -17,11 +17,11 @@
     <div class="container"></div>
  </body>
  ```
- Dalam hal ini terdapat beberapa cara untuk mencari elemen html, yaitu :
+ - Dalam hal ini terdapat beberapa cara untuk mencari elemen html, yaitu 
  - Mencari 1 element dengan id tertentu. Dengan `` document.getElementById("header")``
  - Mencari beberapa element sekaligus dengan class tertentu. Dengan ``documents.getElementsByClassName("container")``
  - Mencari element menggunakan kombinasi selector seperti pada CSS ``document.querySelector("#header p span")
- Selain itu juga terdapat beberapa cara untuk memanggil DOM Value, antara lain :
+ Selain itu juga terdapat beberapa cara untuk memanggil DOM Value, antara lain 
  - Memanggil tag HTML berdasarkan ID ``console.log(document.getElementByID("header))``
  - Memanggil tag HTML berdasarkan Class Name ``console.log(document.getElementByClassName("container"))
  - Memanggil tag html berdasarkan query selector ``console.log(document.querySelector("#header "))``
@@ -63,17 +63,17 @@
     Hallo
     ```
  - **Membuat element HTML** . Dalam membuat element baru html kita bisa menggunakan method createElement(). Selain itu dalam createElement() ini kita juga bisa menyertakan nama tag spesifik yang dituju sebagai parameter. Setelah elemen baru terbuat, pastinya kita tidak ingin konten element tersebut kosong. Maka dari itu, bisa memanfaatkan append() dan appendChild(). Method append() yang menerima argument bertipe Node atau string, sedangkan jika ingin menyematkan elemen lain sebagai child dari elemen tersebut, gunakan appendChild(). appendChild() juga dapat digunakan untuk menambahkan ke DOM. Contoh script :
-  ```
-  Jika terdapat element ini di HTML
-  <div id="header"></div>
+    ```
+    Jika terdapat element ini di HTML
+    <div id="header"></div>
  
-  Lalu setelah itu bisa menggunakan kode Javascript untuk membuat sebuah element heading
-  const heading = document.createElement("h1")
-  heading.textContent = "Ini heading"
-  document.getElementById("header").appendChild(heading)
+    Lalu setelah itu bisa menggunakan kode Javascript untuk membuat sebuah element heading
+    const heading = document.createElement("h1")
+    heading.textContent = "Ini heading"
+    document.getElementById("header").appendChild(heading)
  
-  Maka hasilnya
-  <div id="header">
-    <h1>Ini heading</h1>
-  </div>
-  ```
+    Maka hasilnya
+    <div id="header">
+      <h1>Ini heading</h1>
+    </div>
+    ```
