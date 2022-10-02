@@ -158,12 +158,12 @@
 - **string** adalah deretan karakter yang diapit oleh sepasang tanda kutip (" "). Selain itu, berguna untuk menyimpan data yang dapat direpresentasikan dalam bentuk teks.
 - Properties, terdiri dari :
   - Constructor,untuk mengembalikan fungsi yang dibuat string prototipe objek.
-    a.Length,untuk mengembalikan panjang string pada javascript. Contoh script :
+   - Length,untuk mengembalikan panjang string pada javascript. Contoh script :
       ```
        const str = 'jerapah';
        console.log(str.length); // Output: 7
       ```
-    b.Prototype, untuk menambah metode dan properti ke dalam sebuah objek. Contoh script : Berawal dari kata hallo menjadi ollah
+   - Prototype, untuk menambah metode dan properti ke dalam sebuah objek. Contoh script : Berawal dari kata hallo menjadi ollah
       ```
        String.prototype.reverse = function(){ 
          let s = " "    
