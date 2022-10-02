@@ -327,12 +327,13 @@ Math.sqrt2 //Output: 1.4426 {menghitung akar dua}
   - Hanya terdapat Html element.
   - ``<span>, <div>``
   - ``<h1>Hello<h1>``
-  - ``<ul>``
-      ``<li>Satu</li>``
-      ``<li>Dua</li>``
-      ``<li>Tiga</li>``
-  ``</ul>``
-  
+  - ```
+      <ul>
+        <li>Satu</li>
+        <li>Dua</li>
+        <li>Tiga</li
+      </ul>
+    ```
 Node : setiap bagian terkecil di html (text, comment, span)
 
 -	Traversing 
