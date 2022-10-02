@@ -236,7 +236,91 @@
      ```
       let hewan = "Dinosaurus"
       console.log(hewan.includes("saur"); // Output : true
-     ```     
+     ```
+- **number** adalah bilangan bulat, pecahan, dan lain-lain yang berbentuk angka.
+   ```
+   const a = 19;
+   console.log(a); // 19
+   console.log(typeof a); // number
+   console.log(a instanceof Number); // false    
+   ```
+- Properties (jarang digunakan, kebanyakan menggunakan methods number).
+- Methods, terdiri dari :
+  - isNan() --> NaN (Not a Number), untuk mengecek apakah ini bukan angka. Mengembalikan nilai Boolean, true jika nilai yang diuji NaN(bukan angka), false jika angka
+     ```
+      isNan("hallo") //true
+      isNan(12345) //false, karena ini angka
+      isNan(true) //false, karena boolean true dianggap sebagai 1, dan 1 itu termasuk angka
+      isNan("12345") //false, karena ada angka didalam string
+     ```
+  - toString(), untuk mengubah angka menjadi string.
+     ```
+      let angka = 25
+      angka.toString() //Output: '25'
+     ```
+  - toFixed(), menentukan jumlah angka dibelakang tanda koma. Return nilainya berupa string.
+     ```
+      let pi = 3.14159265
+      pi.toFixed() //Output: '3'
+      pi.toFixed(1) //Output: '3.1'
+      pi.toFixed(4) //Output: '3.1415'
+     ```
+  - parseInt() dan Number(), mengubah string menjadi number.
+     ```
+      myString = "27";
+      console.log(parseInt(myString)); // Output: 27
+      console.log(Number(myString)); //Output: 27
+     ```
+#### **Data Non-Primitive**
+- Object.
+  Contoh:
+   ```
+    let a = [10]
+    let b = a
+    console.log(a === b) // true
+    a.push(10)
+    console.log(a) // [10, 10]
+    console.log(a === b) // true
+   ```
+- Array
+- Function
+### **Math** , untuk mempermudah dalam perhitungan matematika.
+Contoh :
+```
+Math.pi //Output: 3.1415
+Math.LOG2E //Output: 1.4426
+Math.sqrt2 //Output: 1.4426 {menghitung akar dua}
+```
+- Methods Math
+  - Math.abs(), mengembalikan nilai negatif menjadi nilai positif.
+     ```
+     Math.abs(-15) //Output: 15    
+     ```
+   - Math.pow(), menghitung pangkat.
+     ```
+     Math.pow(2, 2) //Output: 4
+     ```
+   - Math.sqrt(), menghitung akar.
+     ```
+     Math.sqrt(25) //Output: 5
+     ```
+   - Math.round(), membulatkan angka.
+     ```
+     Math.round(123.456) //Output: 123
+     ```
+   - Math.floor(), membulatkan angka kebawah.
+     ```
+     Math.floor(4.4) //Output: 4
+     Math.floor(4.9) //Output: 4
+     ```
+   - Math.ceil(), membulatkan angka keatas.
+     ```
+     Math.ceil(5.6) //Output: 6
+     Math.ceil(5.1) //Output: 6
+     ```
+   - Math.random(), menampilkan angka acak.
+   
+
 ## **Javascript DOM**
 
 ### **DOM Manipulation**
