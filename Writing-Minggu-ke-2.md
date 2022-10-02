@@ -334,19 +334,22 @@ Math.sqrt2 //Output: 1.4426 {menghitung akar dua}
         <li>Tiga</li
       </ul>
     ```
-Node : setiap bagian terkecil di html (text, comment, span)
+- **Node** adalah setiap bagian terkecil di html yaitu text, comment, span.
 
--	Traversing 
-Cara mengkases DOM
-1.	getElementbyId : mengambil elemen html menggunakan id. Merupakan salah satu method yang sering digunakan
-2.	getElementsbyClassName : mengambil elemen html berdasarkan nama class. Output berupa html collection karena class name bisa berupa jamak dan dapat digunakan lebih dari satu class. Cara mengaksesnya sama dengan array berupa indeks
-3.	geteElementsbyTagName : sama seperti getElementsbyClassName, tapi mencari berdasarkan tag html yang digunakan. 
-4.	Children : mendapatkan elemen children dari parent
-5.	querySelector : mengambil elemen html setiap elemen html dengan tag berkelas 
-6.	parentElement : mengambil parent element berdasarkan childnya
-7.	closest : untuk mengakses parent
-8.	previousElementSibling : akses elemen yang sejajar sebelum element tersebut 
-9.	nextElementSibling : sama dengan previousElementSibling setelah elemen tersebut
+-	**Traversing Element** 
+- Mengkases DOM :
+- Akses ke bawah 
+  - getElementbyId yaitu mengambil elemen html menggunakan id. 
+  - getElementsbyClassName yaitu mengambil elemen html berdasarkan nama class. Output berupa html collection karena class name bisa berupa jamak dan dapat digunakan lebih dari satu class. Cara mengaksesnya sama dengan array berupa indeks. Perlu diingat bahwa HTML Collection bukanlah array. Dan modelist juga bukan array. 
+  - geteElementsbyTagName, sama seperti getElementsbyClassName, tetapi mencari berdasarkan tag html yang digunakan. 
+  - Children yaitu mendapatkan elemen children dari parents.
+  - querySelector yaitu mengambil elemen html setiap elemen html dengan tag berkelas.
+- Akses ke atas  
+  - parentElement yaitu mengambil parent element berdasarkan childnya.
+  - closest(), digunakan untuk mengakses parents.
+- Akses ke samping 
+  - previousElementSibling yaitu akses elemen yang sejajar sebelum element tersebut.
+  - nextElementSibling yaitu sama dengan previousElementSibling setelah elemen tersebut.
 
 ## **Javascript DOM**
 
