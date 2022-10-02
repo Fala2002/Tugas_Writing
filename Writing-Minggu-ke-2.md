@@ -154,7 +154,7 @@
 ## **Data Type Built in Prototype & Method**
 
 ### **Tipe Data** 
-- #### **Data Primitive**
+#### **Data Primitive**
 - **string** adalah deretan karakter yang diapit oleh sepasang tanda kutip (" "). Selain itu, berguna untuk menyimpan data yang dapat direpresentasikan dalam bentuk teks.
 - Properties, terdiri dari :
   - Constructor,untuk mengembalikan fungsi yang dibuat string prototipe objek.
