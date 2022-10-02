@@ -284,7 +284,7 @@
    ```
 - Array
 - Function
-### **Math** , untuk mempermudah dalam perhitungan matematika.
+### **Math**
 Contoh :
 ```
 Math.pi //Output: 3.1415
@@ -320,6 +320,32 @@ Math.sqrt2 //Output: 1.4426 {menghitung akar dua}
      ```
    - Math.random(), menampilkan angka acak.
    
+## **Javascript Introduction DOM dan Traversing**
+- **Document Object Model** adalah jembatan supaya bahasa pemrograman dapat berinteraksi dengan dokumen HTML. Dengan DOM, JS dapat memanipulasi HTML. DOM sendiri berbentuk tree structure. 
+-	**Element vs node** 
+- Element :
+  - Hanya terdapat Html element.
+  - ``<span>, <div>``
+  - ``<h1>Hello<h1>``
+  - ``<ul>``
+      ``<li>Satu</li>``
+      ``<li>Dua</li>``
+      ``<li>Tiga</li>``
+  ``</ul>``
+  
+Node : setiap bagian terkecil di html (text, comment, span)
+
+-	Traversing 
+Cara mengkases DOM
+1.	getElementbyId : mengambil elemen html menggunakan id. Merupakan salah satu method yang sering digunakan
+2.	getElementsbyClassName : mengambil elemen html berdasarkan nama class. Output berupa html collection karena class name bisa berupa jamak dan dapat digunakan lebih dari satu class. Cara mengaksesnya sama dengan array berupa indeks
+3.	geteElementsbyTagName : sama seperti getElementsbyClassName, tapi mencari berdasarkan tag html yang digunakan. 
+4.	Children : mendapatkan elemen children dari parent
+5.	querySelector : mengambil elemen html setiap elemen html dengan tag berkelas 
+6.	parentElement : mengambil parent element berdasarkan childnya
+7.	closest : untuk mengakses parent
+8.	previousElementSibling : akses elemen yang sejajar sebelum element tersebut 
+9.	nextElementSibling : sama dengan previousElementSibling setelah elemen tersebut
 
 ## **Javascript DOM**
 
