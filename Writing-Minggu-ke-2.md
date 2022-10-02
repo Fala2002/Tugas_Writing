@@ -63,7 +63,7 @@
     Maka hasilnya akan
     Hallo
     ```
- - **Membuat element HTML** . Dalam membuat element baru html kita bisa menggunakan method createElement(). Selain itu dalam createElement() ini kita juga bisa menyertakan nama tag spesifik yang dituju sebagai parameter. Setelah elemen baru terbuat, pastinya kita tidak ingin konten element tersebut kosong. Maka dari itu, bisa memanfaatkan append() dan appendChild(). Method append() yang menerima argument bertipe Node atau string, sedangkan jika ingin menyematkan elemen lain sebagai child dari elemen tersebut, gunakan appendChild(). appendChild() juga dapat digunakan untuk menambahkan ke DOM. Contoh script :
+ - **Membuat element HTML** . Dalam membuat element baru html kita bisa menggunakan method createElement(). Selain itu dalam createElement() ini kita juga bisa menyertakan nama tag spesifik yang dituju sebagai parameter. Setelah elemen baru terbuat, pastinya kita tidak ingin konten element tersebut kosong. Maka dari itu, bisa memanfaatkan append() dan appendChild(). Method append() yang menerima argument bertipe Node atau string, sedangkan jika ingin menyematkan elemen lain sebagai child dari elemen tersebut, gunakan appendChild(). appendChild() juga dapat digunakan untuk menambahkan ke DOM atau menyisipkan node saja. Contoh script :
     ```
     Jika terdapat element ini di HTML
     <div id="header"></div>
@@ -77,4 +77,67 @@
     <div id="header">
       <h1>Ini heading</h1>
     </div>
+    ```
+ - **Menghapus Element** , Untuk menghapus element kita bisa menggunakan ``remove()``. Contoh syntax :
+    ```
+    let end = document.getElementById("end")
+    end.remove()
+    ```
+ -  **Mengecek dan melihat Attribute**. Kita bisa mengecek dan melihat attribute dalam HTML dengan :
+    ```
+    <a href= google.com" class="link">Google</a>
+    
+    //karena classname adalah html collection maka ditambahkan index array ke-0
+    let link = document.getElementByClassName("link")[0]
+    
+    //untuk mengecek attribute 
+    console.log(link.attributes)
+    
+    //untuk melihat punya attribute apa saja
+    console.log(link.attributes("href"))
+    ```
+ -  **Menambahkan Attribute**
+    ```
+    link.setAttribute("Id", "google")
+    ```
+ - **Memberikan style** , kita bisa memberikan styling pada html dengan menggunakan javascript DOM, contoh syntaxnya :
+    ```
+    link.style.color = "black"
+    link.style.border = "1px solid black"
+    link.style.padding = "5px 20px"
+    link.style.backgroundColor = "aqua"
+    ```
+ - **Menghapus style property**
+    ```
+    link.style.removeProperty("border") 
+    ```
+ - **Menambahkan style dari element**
+    ```
+    <style>
+      #tess {
+          width: 100px;
+          height: 20px;
+          background-color: brown:
+      }
+      
+    let tess = document.getElementById("tess")
+    let tessStyle = getComputedStyle(tess)
+    console.log(tessStyle.height)
+    ```
+ - **List Class**
+    ```
+    <div class= "container">
+    
+    </div>
+    
+    let container = document.getElementsByClassName("container")[0]
+    console.log(container.classList);
+    ```
+ - **Menambahkan Class**
+    ```
+    container.classList.add("home") 
+    ```
+ - **Menghapus Class**
+    ```
+    container.classList.remove("container") 
     ```
