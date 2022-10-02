@@ -157,23 +157,23 @@
 - Data Primitive
 - **string** adalah deretan karakter yang diapit oleh sepasang tanda kutip (" "). Selain itu, berguna untuk menyimpan data yang dapat direpresentasikan dalam bentuk teks.
 - Properties, terdiri dari :
-  - Constructor,untuk mengembalikan fungsi yang dibuat string prototipe objek.
-   - Length,untuk mengembalikan panjang string pada javascript. Contoh script :
-      ```
-       const str = 'jerapah';
-       console.log(str.length); // Output: 7
-      ```
-   - Prototype, untuk menambah metode dan properti ke dalam sebuah objek. Contoh script : Berawal dari kata hallo menjadi ollah
-      ```
-       String.prototype.reverse = function(){ 
-         let s = " "    
-         for (let i = String(this).length-1; i >= 0; i-- { 
-           s = s + String(this)[i]
-        } 
-        return s 
-        }
-        console.log("hallo".reverse()) //Output: 'ollah'
-        ```
+- Constructor,untuk mengembalikan fungsi yang dibuat string prototipe objek.
+  - Length,untuk mengembalikan panjang string pada javascript. Contoh script :
+    ```
+     const str = 'jerapah';
+     console.log(str.length); // Output: 7
+    ```
+  - Prototype, untuk menambah metode dan properti ke dalam sebuah objek. Contoh script : Berawal dari kata hallo menjadi ollah
+    ```
+     String.prototype.reverse = function(){ 
+       let s = " "    
+       for (let i = String(this).length-1; i >= 0; i-- { 
+         s = s + String(this)[i]
+      } 
+      return s 
+      }
+      console.log("hallo".reverse()) //Output: 'ollah'
+    ```
 
 ## **Javascript DOM**
 
