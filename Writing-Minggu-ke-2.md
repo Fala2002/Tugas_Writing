@@ -162,9 +162,9 @@
       ```
        const str = 'jerapah';
        console.log(str.length); // Output: 7
-       ```
+      ```
     b.Prototype, untuk menambah metode dan properti ke dalam sebuah objek. Contoh script : Berawal dari kata hallo menjadi ollah
-       ```
+      ```
        String.prototype.reverse = function(){ 
          let s = " "    
          for (let i = String(this).length-1; i >= 0; i-- { 
