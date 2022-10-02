@@ -157,7 +157,7 @@
 - Data Primitive
 - **string** adalah deretan karakter yang diapit oleh sepasang tanda kutip (" "). Selain itu, berguna untuk menyimpan data yang dapat direpresentasikan dalam bentuk teks.
 - Properties, terdiri dari :
-- Constructor,untuk mengembalikan fungsi yang dibuat string prototipe objek.
+  - Constructor,untuk mengembalikan fungsi yang dibuat string prototipe objek.
   - Length,untuk mengembalikan panjang string pada javascript. Contoh script :
     ```
      const str = 'jerapah';
@@ -174,7 +174,69 @@
       }
       console.log("hallo".reverse()) //Output: 'ollah'
     ```
-
+- Method, terdiri dari :
+  - charAt(), mengembalikan karakter pada index yang spesifik (posisi).
+    ```
+     let hewan = 'Dinosaurus';
+      console.log(hewan.charAt(4)); //Output : s
+     ```
+  - indexOf(), membalikan posisi kemunculan pertama yang ditemukan dari teks yang ditentukan dalam sebuah string.
+     ```
+      const str = 'saya sedang belajar javascript';
+      console.log(str.indexOf('a')); // 1 :: s(a)ya ... 
+      console.log(str.indexOf('ja')); // 16 :: ... bela(ja)r javascript
+     ```
+  - lastIndexOf(), membalikan posisi kemunculan terakhir yang ditemukan dari teks yang ditentukan dalam sebuah string.
+     ```
+      const str = 'saya sedang belajar javascript';
+      console.log(str.lastIndexOf('a')); // 23 :: ... belajar jav(a)script
+      console.log(str.lastIndexOf('ja')); // 20 :: ... belajar (ja)vascript
+      console.log(str.lastIndexOf('ja', 19)); // 16 :: ... bela(ja)r javascript
+     ```
+  - replace(), mencari string untuk nilai dan kembalikan string baru dengan nilai yang diganti.
+     ```
+      const str = 'aku sedang belajar javascript';
+      console.log(str.replace('aku', 'saya')); // saya sedang belajar javascript
+     ```
+  - slice(), mengekstrak bagian dari string dan kembalikan string baru. Syntaxnya : slice(indeksAwal, indeksAkhir);
+     ```
+      const str = 'saya sedang belajar javascript';
+      console.log(str.slice(5, 11)); // sedang
+      console.log(str.slice(5)); // sedang belajar javascript
+     ```
+  - split(), memisahkan string ke dalam array substring. Syntaxnya : split(separator, limit);
+     ```
+      const str = 'saya sedang belajar javascript';
+      console.log(str.split()); // ["saya sedang belajar javascript"]
+      console.log(str.split(' ')); // ["saya", "sedang", "belajar", "javascript"]
+      console.log(str.split(' ', 2)); //  ["saya", "sedang"]
+     ```
+  - substring(), mengekstrak bagian dari string antara dua posisi yang ditentukan.
+     ```
+      const str = 'saya sedang belajar javascript';
+      console.log(str.substring(1, 3)); // ay
+      console.log(str.substring(5)); // sedang belajar javascript
+     ```
+  - toLowerCase(), mengubah string menjadi huruf kecil.
+     ```
+      const str = 'Skilvul';
+      console.log(str.toLowerCase()); //Output: skilvul
+     ```
+  - toUpperCase(), mengubah string menjadi huruf besar.
+     ```
+      const str = 'skilvul';
+      console.log(str.toUpperCase()); //Output: SKILVUL
+     ```
+  - trim(), menghapus spasi dari kedua ujung string.
+     ```
+      const str = '     skilvul      ';
+      console.log(str.trim()); // 'skilvul'
+     ```
+  - includes(), mengembalikan nilai true or false apalah dalam variabel ada string tersebut.
+     ```
+      let hewan = "Dinosaurus"
+      console.log(hewan.includes("saur"); // Output : true
+     ```     
 ## **Javascript DOM**
 
 ### **DOM Manipulation**
