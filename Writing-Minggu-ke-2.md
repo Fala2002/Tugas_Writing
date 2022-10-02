@@ -151,6 +151,30 @@
   - Eslint untuk memastikan panduan gaya konsisten dan itu akan membawa satu atau dua kesalahan di sepanjang mengoding.
   - Untuk yang ingin menjadikan JS pengalaman mengetik yang lebih kuat, maka dapat melihat hal-hal seperti TypeScript.
 
+## **Data Type Built in Prototype & Method**
+
+### **Tipe Data** 
+- Data Primitive
+  - **string** adalah deretan karakter yang diapit oleh sepasang tanda kutip (" "). Selain itu, berguna untuk menyimpan data yang dapat direpresentasikan dalam bentuk teks
+   - Properties
+    - Constructor,untuk mengembalikan fungsi yang dibuat string prototipe objek.
+    - Length,untuk mengembalikan panjang string pada javascript. Contoh script :
+      ```
+       const str = 'jerapah';
+       console.log(str.length); // Output: 7
+       ```
+    - Prototype, untuk menambah metode dan properti ke dalam sebuah objek. Contoh script : Berawal dari kata hallo menjadi ollah
+       ```
+       String.prototype.reverse = function(){ 
+         let s = " "    
+         for (let i = String(this).length-1; i >= 0; i-- { 
+           s = s + String(this)[i]
+        } 
+        return s 
+        }
+        console.log("hallo".reverse()) //Output: 'ollah'
+        ```
+
 ## **Javascript DOM**
 
 ### **DOM Manipulation**
