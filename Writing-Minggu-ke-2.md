@@ -141,3 +141,45 @@
     ```
     container.classList.remove("container") 
     ```
+
+### **DOM Events dan DOM Form**
+- Event berarti kejadian atau kegiatan atau interaksi yang terjadi pada website.
+- Terdapat 3 cara dalam memberikan event, yaitu :
+  - HTML Attribute.
+    ```
+    <h1 onclick="alert('selamat datang')">Hallo</h1>
+    ```
+  - Event propperty.
+    ```
+    <p id="paragraf">click me</p>
+     
+    paragraf.onclick = function () {
+      alert("ini dari paragraf")
+    }
+    ```
+    Atau bisa juga dengan tampilkan alert
+    ```
+    paragraf.onclick = tampilkanAlert
+
+    function tampilkanAlert () {
+      alert("ini alert")
+    }
+    ```
+  - addEventListener()
+    ```
+    <button id="btn">klik saya</button>
+    
+    let button = document.getElementById("btn")
+    button.addEventListener("click", function (event) {
+      console.log(event.target)
+      alert("ini dari button")
+    })
+    ```
+- Event sendiri terdiri dari ;
+  - click.
+  - submit.
+  - focus. 
+  - blur.
+  - hover.
+  - change.
+  - scroll.
