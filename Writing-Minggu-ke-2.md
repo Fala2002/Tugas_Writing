@@ -156,14 +156,14 @@
 ### **Tipe Data** 
 - Data Primitive
 - **string** adalah deretan karakter yang diapit oleh sepasang tanda kutip (" "). Selain itu, berguna untuk menyimpan data yang dapat direpresentasikan dalam bentuk teks.
-  - Properties, terdiri dari :
-    a. Constructor,untuk mengembalikan fungsi yang dibuat string prototipe objek.
-    - Length,untuk mengembalikan panjang string pada javascript. Contoh script :
+- Properties, terdiri dari :
+  - Constructor,untuk mengembalikan fungsi yang dibuat string prototipe objek.
+    a.Length,untuk mengembalikan panjang string pada javascript. Contoh script :
       ```
        const str = 'jerapah';
        console.log(str.length); // Output: 7
        ```
-    - Prototype, untuk menambah metode dan properti ke dalam sebuah objek. Contoh script : Berawal dari kata hallo menjadi ollah
+    b.Prototype, untuk menambah metode dan properti ke dalam sebuah objek. Contoh script : Berawal dari kata hallo menjadi ollah
        ```
        String.prototype.reverse = function(){ 
          let s = " "    
