@@ -527,10 +527,10 @@ Math.sqrt2 //Output: 1.4426 {menghitung akar dua}
     })
     ```
 - Event sendiri terdiri dari ;
-  - click.
-  - submit.
-  - focus. 
-  - blur.
-  - hover.
-  - change.
-  - scroll.
+  - click, adalah event yang terjadi ketika user melakukan klik atau tab. 
+  - submit, adalah event yang biasanya terjadi pada form saat melakukan submision atau mengirim data pada form.
+  - focus, akan diaktifkan ketika user melakukan klik atau tab.
+  - blur, event terjadi karena element kehilangan fokus.
+  - hover,event yang terjadi karena mouse, dimana saat pointer berada diatas element.
+  - change, biasanya terjadi pada element input seperti input text, checkbox, radio, select-option, dan lain sebagainya. Event change terjadi saat nilai pada element tersebut berpindah.
+  - scroll, event terjadi ketika user melakukan scroll.
