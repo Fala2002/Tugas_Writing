@@ -1,8 +1,8 @@
 # **Writing Minggu ke-3**
 
-##*Javascript Intermediate**
+## **Javascript Intermediate**
 
-###**Array dan Multidimensional Array**
+### **Array dan Multidimensional Array**
 - **Array** adalah sebuah tipe data non-primitif yang mampu menyimpan banyak data serta mampu menyimpan berbagai macam tipe data. Cara menggunakan array adalah dengan menggunakan kurung kotak, seperti let arr []. Contoh dari array sebagai berikut :
 ```
 let arr = ["Hallo", 1, true];
