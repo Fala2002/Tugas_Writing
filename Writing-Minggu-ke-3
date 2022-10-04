@@ -1,0 +1,21 @@
+# **Writing Minggu ke-3**
+
+##*Javascript Intermediate**
+
+###**Array dan Multidimensional Array**
+- **Array** adalah sebuah tipe data non-primitif yang mampu menyimpan banyak data serta mampu menyimpan berbagai macam tipe data. Cara menggunakan array adalah dengan menggunakan kurung kotak, seperti let arr []. Contoh dari array sebagai berikut :
+```
+let arr = ["Hallo", 1, true]
+Atau bisa juga
+
+let bunga = ['Melati',  'Tulip', 'Anggrek']
+console.log(bunga);
+```
+- Cara mengakses array, Array pada javascript dihitung dari index data ke-0. Data pertama adalah index ke-0. Contoh syntax :
+```
+let buku = ["Buku Cerita", "Buku Pelajaran", "Buku Dongeng"]
+console.log(buku);
+Dalam syn
+Output :
+
+
