@@ -3,7 +3,7 @@
 ## **Javascript Intermediate**
 
 ### **Array dan Multidimensional Array**
-- **Array** adalah sebuah tipe data non-primitif yang mampu menyimpan banyak data serta mampu menyimpan berbagai macam tipe data. Cara menggunakan array adalah dengan menggunakan kurung kotak, seperti let arr []. Contoh dari array sebagai berikut :
+- **Array** adalah sebuah tipe data non-primitif yang mampu menyimpan banyak data serta mampu menyimpan berbagai macam tipe data. Cara menggunakan array adalah dengan menggunakan kurung kotak, seperti let arr [ ]. Contoh dari array sebagai berikut :
 ```
 let arr = ["Hallo", 1, true];
 Atau bisa juga
@@ -37,7 +37,19 @@ Output : ["Buku Sejarah", "Buku Pelajaran", "Buku Dongeng"]
 ```
 const warna = ['Merah', 'Putih', 'Biru'];
 warna[1] = ['Kuning'];
-
+ 
 console.log(warna);
 Output : ['Merah', 'Kuning', 'Biru'];
 ```
+- **Array Properti**, Properties adalah fitur yang sudah disediakan oleh Javascript untuk memudahkan developer.Array properti terdiri dari :
+  - **.length**, length akan mengembalikan nilai dari jumlah panjang data suatu array. Contoh syntax :
+    ```
+    let arr = ["Hallo", 1, true]
+    console.log(arr.length);
+    
+    Output : 3
+    ```
+  - **.constructor**, constructor mengembalikan referensi ke fungsi array yang membuat objek.
+  - **.prototype**, prototype mewarisi definisi array dengan menambah properti dan metode.
+  - **.index**, mewakili indeks kecocokan berbasis nol dalam string.
+  - **.input**, properti ini hanya ada dalam array yang dibuat oleh kecocokan ekspresi reguler.
