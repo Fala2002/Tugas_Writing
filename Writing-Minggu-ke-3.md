@@ -447,3 +447,5 @@ Output : ['Merah', 'Kuning', 'Biru'];
   - Amerika hanya melakukan export.
   ```
 - Hal hal yang harus dilakukan saat membuat modules adalah menambahkan type="module" pada script utama, lalu siapkan script ke-2 dan sebagainya untuk melakukan export, serta lakukan import pada file atau script utama.
+
+### **Asynchronous**
