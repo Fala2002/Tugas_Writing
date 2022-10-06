@@ -155,3 +155,42 @@ Output : ['Merah', 'Kuning', 'Biru'];
   Jeruk
   Anggur
   ```
+ - **.forEach()** adalah method untuk melakukan looping pada setiap elemen array. ForEach ini tanpa menggunakan return.Contoh script :
+  ```
+  arrBuah.forEach((item) => {
+   console.log(item)
+  });
+  //Output :
+  Anggur
+  Jeruk
+  Semangka
+  Pepaya
+  Rambutan
+  Duku
+  
+  Contoh lain
+  arrBuah.forEach((index,item) =>{
+  if(index %2 == 1){
+   console.log(index,item)
+  }
+  });
+  //Output :
+  1. Jeruk
+  3. Pepaya
+  5. Duku
+  Script diatas digunakan untuk menampilkan index array ganjil.
+  ```
+ - **.map()** melakukan perulangan/looping dengan membuat array baru.Contoh script :
+  ```
+  let buah segar = arrBuah.map((item) =>{
+  return item + " " + "segar"
+  });
+  //Output :
+  0 : Anggur segar
+  1 : Jeruk segar
+  2 : Semangka
+  3 : Pepaya
+  4 : Rambutan
+  5 : Duku
+  ```
+  
