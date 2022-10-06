@@ -385,3 +385,65 @@ Output : ['Merah', 'Kuning', 'Biru'];
     Fala
     Diana
     ```
+### **Rekrusif dan Modules**
+- **Rekrusif** adalah function atau algoritma yang memanggil dirinya sendiri sampai kondisi tertentu. Rekrusif ini mirip seperti looping. Misalnya pada gambar ada gambar di dalam gambar. Terdapat 2 kunci pada rekrusif,yaitu base case atau titik berhenti dan recrusion case atau titik memanggil function. Contoh script :
+  ```
+  Menampilkan bilangan 1 2 3 4 5
+  
+  function deretAngka(n){
+   if (n == 1) {
+     console.log(n)
+   } else {
+     deretAngka(n-1)
+     console.log(n);
+    }
+  }
+  deretAngka(3)
+  
+  Atau contoh lain :
+  Mencari angka faktorial
+  Misalnya 5!
+  Solusinya jika dijabarkan 5 x 4 x 3 x 2 x 1
+
+  function faktorial(n) {
+    if (n == 1) {
+      return 1
+    } else {
+      return n * faktorial(n - 1)
+    }
+  }
+  console.log(faktorial(3))
+  //Output = 6
+  ```
+- **Modules** adalah cara untuk memisahkan kode ke file yang berbeda. Keuntungan dari modules yaitu mudah untuk mengelola kode serta kode tidak menumpuk di dalam satu file. Terdapat 2 kata kunci pada modules yaitu export dan import. Contoh script :
+  ```
+  // File Jepang.js
+  export let motor = ["suzuki", "yamaha", "honda", "kawasaki"]
+  
+  let entertainment = ["anime", "manga", "wibu", "dorama"]
+  export default entertainment
+  
+  export function sayHello() {
+   console.log("hallooo")
+  }
+  
+  import {apple} from './amerika.js';
+   console.log(apple);
+  
+  // File Indonesia.js
+  import {motor} from "./Jepang.js"
+   console.log(motor);
+   
+  import Entertainment, { motor as motorJepang, sayHello  } from "./jepang.js"
+  console.log(Entertainment);
+  
+  // File Amerika.js
+  let apple = ["iphone", "macbook", "imac"]
+    export {apple}
+  
+  Berdasarkan script diatas,
+  - Indonesia hanya bisa import, karena dia file utama.
+  - Jepang bisa melakukan import dan export.
+  - Amerika hanya melakukan export.
+  ```
+- Hal hal yang harus dilakukan saat membuat modules adalah menambahkan type="module" pada script utama, lalu siapkan script ke-2 dan sebagainya untuk melakukan export, serta lakukan import pada file atau script utama.
