@@ -130,67 +130,67 @@ Output : ['Merah', 'Kuning', 'Biru'];
    console.log(slice); //Output : "Rambutan", "Anggur", "Semangka"
    ```
 - **Looping Array**, Array memiliki built in methods untuk melakukan looping yaitu .map() dan .forEach(). Contoh script looping :
-  ```
-  let arrBuah = ["Anggur", "Jeruk", "Semangka", "Pepaya", "Rambutan", "Duku"];
-  for(let i = 0; i<arrBuah.length; i++){
-  console.log(arrBuah[i])
-  };
-  //Output : 
-  Anggur
-  Jeruk
-  Semangka
-  Pepaya
-  Rambutan
-  Duku
+   ```
+   let arrBuah = ["Anggur", "Jeruk", "Semangka", "Pepaya", "Rambutan", "Duku"];
+   for(let i = 0; i<arrBuah.length; i++){
+   console.log(arrBuah[i])
+   };
+   //Output : 
+   Anggur
+   Jeruk
+   Semangka
+   Pepaya
+   Rambutan
+   Duku
   
-  Atau bisa juga
-  for(let i = arrBuah.lengthh-1; i>0; i--){
-  console.log(arrBuah[i])
-  };
-  //Output :
-  Duku
-  Rambutan
-  Pepaya
-  Semangka
-  Jeruk
-  Anggur
-  ```
+   Atau bisa juga
+   for(let i = arrBuah.lengthh-1; i>0; i--){
+   console.log(arrBuah[i])
+   };
+   //Output :
+   Duku
+   Rambutan
+   Pepaya
+   Semangka
+   Jeruk
+   Anggur
+   ```
  - **.forEach()** adalah method untuk melakukan looping pada setiap elemen array. ForEach ini tanpa menggunakan return.Contoh script :
-  ```
-  arrBuah.forEach((item) => {
-   console.log(item)
-  });
-  //Output :
-  Anggur
-  Jeruk
-  Semangka
-  Pepaya
-  Rambutan
-  Duku
+   ```
+   arrBuah.forEach((item) => {
+    console.log(item)
+   });
+   //Output :
+   Anggur
+   Jeruk
+   Semangka
+   Pepaya
+   Rambutan
+   Duku
   
-  Contoh lain
-  arrBuah.forEach((index,item) =>{
-  if(index %2 == 1){
-   console.log(index,item)
-  }
-  });
-  //Output :
-  1. Jeruk
-  3. Pepaya
-  5. Duku
-  Script diatas digunakan untuk menampilkan index array ganjil.
-  ```
+   Contoh lain
+   arrBuah.forEach((index,item) =>{
+   if(index %2 == 1){
+    console.log(index,item)
+   }
+   });
+   //Output :
+   1. Jeruk
+   3. Pepaya
+   5. Duku
+   Script diatas digunakan untuk menampilkan index array ganjil.
+   ```
  - **.map()** melakukan perulangan/looping dengan membuat array baru.Contoh script :
-  ```
-  let buah segar = arrBuah.map((item) =>{
-  return item + " " + "segar"
-  });
-  //Output :
-  0 : Anggur segar
-  1 : Jeruk segar
-  2 : Semangka
-  3 : Pepaya
-  4 : Rambutan
-  5 : Duku
-  ```
+   ```
+   let buah segar = arrBuah.map((item) =>{
+   return item + " " + "segar"
+   });
+   //Output :
+   0 : Anggur segar
+   1 : Jeruk segar
+   2 : Semangka
+   3 : Pepaya
+   4 : Rambutan
+   5 : Duku
+   ```
   
