@@ -193,4 +193,18 @@ Output : ['Merah', 'Kuning', 'Biru'];
    4 : Rambutan
    5 : Duku
    ```
-  
+- **Array Multidimensional** Multidimensional Array bisa dianalogikan dengan array of array. Ada array didalam array. Contoh script :
+   ```
+   let arrMulti = [
+   ["nama", "alpha"],
+   ["umur", 17],
+   ["kelas",  "JS"],
+   ]
+   console.log(arrMulti[0][1];
+   //Output : "alpha"
+   
+   Atau bisa juga
+   arrMulti[2][1] = "CSS"
+   console.log(arrrMulti);
+   Script diatas berarti teks JS dirubah menjadi CSS
+   ```
