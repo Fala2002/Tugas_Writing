@@ -208,3 +208,88 @@ Output : ['Merah', 'Kuning', 'Biru'];
    console.log(arrrMulti);
    Script diatas berarti teks JS dirubah menjadi CSS
    ```
+
+### **Javascript Object**
+- **Object** adalah tipe data pada variabel yang menyimpan properti dan fungsi (method). Properti adalah data lengkap dari sebuah object. Method adalah action dari sebuah object.
+- **Membuat sebuah object** Sama seperti tipe data sebelumnya. Object dapat diassign kedalam sebuah variabel. Contoh script :
+   ```
+   let siswa = {
+    nama : 'terra',
+    umur : 17,
+    hobi : 'memancing', 
+    "nomor handphone" : 08256814086
+    }
+    console.log(siswa);
+    ```
+- **Cara akses object** Dalam mengakses object terdapat 2 cara yaitu menggunakan dot notation dan bracket. Selain itu, bisanya dalam mengakses object yaitu menggunakan console.log(object).
+  - dot notation, misalnya ``console.log(siswa.nama);`` maka output yang dihasilkan yaitu terra
+  - bracket, misalnya ``console.log(siswa['nama']);`` 
+- **Memanggil nama object dengan variable** contohnya :
+    ```
+    let properti = "umur"
+    console.log(siswa[properti]);
+    ```
+- **Menambahkan properti baru ke dalam object** Contoh script:
+    ```
+    Cara 1
+    let buku = {
+     Judul : "Mantan jadi manten",
+     Penulis : "Hayati",
+     "Jumlah halaman" : 250,
+     };
+     buku.tahun : 2022;
+     buku.terjual : 3000;
+     console.log(bukuu);
+     //Output :
+     Judul : Mantan jadi manten
+     Penulis : Hayati
+     Jumlah halaman : 250
+     buku.tahun : 2022
+     buku.terjual : 3000
+     
+     Cara 2
+     buku["penerbit"] : "gramedia";
+     console.log(buku);
+     //Output :
+     Judul : Mantan jadi manten
+     Penulis : Hayati
+     Jumlah halaman : 250
+     buku.tahun : 2022
+     buku.terjual : 3000
+     penerbit : gramedia
+     ```
+- **Ganti properti lama** contoh script : 
+     ```
+     Cara 1
+     let hewan = {
+      nama : 'kucing',
+      kaki : 4,
+      warna : 'putih',
+     };
+     hewan.nama : 'kelinci',
+     hewan.warna : 'hitam',
+     console.log(hewan);
+     //Output 
+     nama : kelinci
+     kaki : 4
+     warna : hitam
+     
+     Cara 2
+     hewan["kaki"]=2;
+     console.log(hewan)
+     nama : kelinci
+     kaki : 2
+     warna : hitam
+     ```
+- **Delete Properti** contoh script :
+     ```
+      let hewan = {
+      nama : 'kucing',
+      kaki : 4,
+      warna : 'putih',
+     };
+     delete.hewan.warna;
+     delete.hewan.kaki;
+     console.log(hewan);
+     //Output : nama : kucing
+     ```
