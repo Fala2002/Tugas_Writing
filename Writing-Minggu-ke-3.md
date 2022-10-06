@@ -114,5 +114,44 @@ Output : ['Merah', 'Kuning', 'Biru'];
    arrBuah.splice(2, 1, "Buah Naga")
    console .log(arrBuah); //Output : "Jeruk", "Buah Naga", "Rambutan", "Anggur", "Semangka"
    ```
- - **.slice()** digunakan untuk mengembalikan shallow to copy (copy data) atau mengambil data dengan cara copy data. 
- 
+ - **.slice()** digunakan untuk mengembalikan shallow to copy (copy data) atau mengambil data dengan cara copy data. Contoh script :
+   ```
+   let arrBuah = [
+   "Jeruk",
+   "Pepaya",
+   "Rambutan",
+   "Anggur",
+   "Semangka"
+   ];
+   let slice = arrBuah.slice(2, 4)
+   console.log(slice); //Output: "Pepaya", "Anggur"
+   
+   let slice = arrBuah.slice(2)
+   console.log(slice); //Output : "Rambutan", "Anggur", "Semangka"
+   ```
+- **Looping Array**, Array memiliki built in methods untuk melakukan looping yaitu .map() dan .forEach(). Contoh script looping :
+  ```
+  let arrBuah = ["Anggur", "Jeruk", "Semangka", "Pepaya", "Rambutan", "Duku"];
+  for(let i = 0; i<arrBuah.length; i++){
+  console.log(arrBuah[i])
+  };
+  //Output : 
+  Anggur
+  Jeruk
+  Semangka
+  Pepaya
+  Rambutan
+  Duku
+  
+  Atau bisa juga
+  for(let i = arrBuah.lengthh-1; i>0; i--){
+  console.log(arrBuah[i])
+  };
+  //Output :
+  Duku
+  Rambutan
+  Pepaya
+  Semangka
+  Jeruk
+  Anggur
+  ```
