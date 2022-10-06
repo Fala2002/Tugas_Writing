@@ -87,7 +87,7 @@ Output : ['Merah', 'Kuning', 'Biru'];
    console.log(arrBuah); //Output : "Jeruk", "Pepaya"
    ```
  - **.shift()** adalah method yang digunakan untuk menghapus elemen depan. Contoh syntax :
-   ``
+   ```
    let arrBuah = [
    "Jeruk",
    "Pepaya",
@@ -107,12 +107,12 @@ Output : ['Merah', 'Kuning', 'Biru'];
    ];
    arrBuah.splice(2) 
    console.log(arraBuah); //Output : "Jeruk", "Pepaya"
+   
+   arrBuah.splice(2, 1)
+   console.log(arrBuah); //Output : "Jeruk", "Rambutan", "Anggur", "Semangka"
   
-  arrBuah.splice(2, 1)
-  console.log(arrBuah); //Output : "Jeruk", "Rambutan", "Anggur", "Semangka"
-  
-  arrBuah.splice(2, 1, "Buah Naga")
-  console .log(arrBuah); //Output : "Jeruk", "Buah Naga", "Rambutan", "Anggur", "Semangka"
-  ```
+   arrBuah.splice(2, 1, "Buah Naga")
+   console .log(arrBuah); //Output : "Jeruk", "Buah Naga", "Rambutan", "Anggur", "Semangka"
+   ```
  - **.slice()** digunakan untuk mengembalikan shallow to copy (copy data) atau mengambil data dengan cara copy data. 
  
