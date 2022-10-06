@@ -53,3 +53,66 @@ Output : ['Merah', 'Kuning', 'Biru'];
   - **.prototype**, prototype mewarisi definisi array dengan menambah properti dan metode.
   - **.index**, mewakili indeks kecocokan berbasis nol dalam string.
   - **.input**, properti ini hanya ada dalam array yang dibuat oleh kecocokan ekspresi reguler.
+- **Array Methods**, Array memiliki method atau biasa disebut built-in methods. Kita tidak perlu membuat function lagi jika method yang kita butuhkan sudah tersedia.
+ - **.push()** adalah method yang digunakan untuk menambah data diakhir. Contoh syntax :
+   ```
+   let arrBuah = [
+   "Jeruk",
+   "Pepaya",
+   "Rambutan"
+   ];
+   console.log(arrBuah);
+   
+   arrBuah.push("Duku")
+   console.log(arrBuah); //Output : "Jeruk", "Pepaya", "Rambutan", "Duku"
+   ```
+ - **.unshift()** adalah method yang digunakan untuk menambahkan data didepan. Contoh syntax :
+   ```
+   let arrBuah = [
+   "Jeruk",
+   "Pepaya",
+   "Rambutan"
+   ];
+   arrBuah.unshift("Mangga")
+   console.log(arrBuah); //Output : "Mangga", "Jeruk", "Pepaya", "Rambutan"
+   ```
+ - **.pop()** adalah method yang digunakan untuk menghapus elemen terakhir. Contoh syntax :
+   ```
+   let arrBuah = [
+   "Jeruk",
+   "Pepaya",
+   "Rambutan"
+   ];
+   arrBuah.pop()
+   console.log(arrBuah); //Output : "Jeruk", "Pepaya"
+   ```
+ - **.shift()** adalah method yang digunakan untuk menghapus elemen depan. Contoh syntax :
+   ``
+   let arrBuah = [
+   "Jeruk",
+   "Pepaya",
+   "Rambutan"
+   ];
+   arrBuah.shift()
+   console.log(arrBuah); //Output : "Pepaya", "Rambutan"
+   ```
+ - **.splice()** adalah method yang digunakan untuk menghapus ditengah. Dalam slice terdapat start atau awal/index, deletecount atau banyak data yang didelete, dan item atau data yang disisipkan. Contoh syntax :
+   ```
+   let arrBuah = [
+   "Jeruk",
+   "Pepaya",
+   "Rambutan",
+   "Anggur",
+   "Semangka"
+   ];
+   arrBuah.splice(2) 
+   console.log(arraBuah); //Output : "Jeruk", "Pepaya"
+  
+  arrBuah.splice(2, 1)
+  console.log(arrBuah); //Output : "Jeruk", "Rambutan", "Anggur", "Semangka"
+  
+  arrBuah.splice(2, 1, "Buah Naga")
+  console .log(arrBuah); //Output : "Jeruk", "Buah Naga", "Rambutan", "Anggur", "Semangka"
+  ```
+ - **.slice()** digunakan untuk mengembalikan shallow to copy (copy data) atau mengambil data dengan cara copy data. 
+ 
