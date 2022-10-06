@@ -293,3 +293,67 @@ Output : ['Merah', 'Kuning', 'Biru'];
      console.log(hewan);
      //Output : nama : kucing
      ```
+- **Method** adalah ketika ingin menambahkan sebuah function. Ada 2 method dalam object, yaitu :
+  - **const greeting** contoh script :
+    ```
+    const greeting = {
+     welcome : function(){
+      return "halo selamat datang";
+    };
+     afterpay:function(){
+     return "terimakasih sudah membeli produk kami";
+     }
+    };
+    console.log(greeting.welcome()); //Output : halo selamat datang
+    ```
+  - **nested object** contoh script :
+    ```
+    let buku = {
+     Judul : "Tips jago Javascript",
+     Tahun : 2022;
+     Penulis {
+        Penulis1 : {
+           Nama : "Reyhan",
+           Umur : 28,
+           Kota : "Jakarta"
+           }
+        Penulis2 : {
+           Nama : "Fala",
+           Umur : 25,
+           Kota : "Madiun"
+           }
+        Penulis3 : {
+           Nama : "Diana",
+           Umur : 20,
+           Kota : "Bandung"
+           }
+         }
+    };
+     console.log(buku.penulis.penulis1.nama);//Output : Reyhan
+    ```
+- **Built In Method (Object menjadi array** 
+     ```
+     let siswa = {
+       nama : "Fala",
+       umur : 20,
+       hobi : "Berenang",
+     };
+     console.log(object.keys.(siswa)); //Output : 'nama', 'umur', 'hobi'
+     console.log(object.values.(siswa)); //Output : 'Fala', '20', 'Berenang'
+     ```
+- **Looping Object** Looping sendiri berarti perulangan. Contoh scriptnya :
+    ```
+    let siswa = {
+     nama : "Reyhan",
+     umur : 22,
+     kota : "Jakarta",
+    };
+    for(let key in siswa){
+      console.log(siswa[key]); 
+    //Output :
+    Reyhan
+    22
+    Jakarta
+    ```
+      
+      
