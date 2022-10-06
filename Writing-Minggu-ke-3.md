@@ -355,5 +355,33 @@ Output : ['Merah', 'Kuning', 'Biru'];
     22
     Jakarta
     ```
-      
-      
+- **Array of Object** adalah array yang menyimpan banyak object sebagai nilainya. Contoh script :
+    ```
+    let users = {
+      {
+       Nama : "Reyhan",
+       Umur : 28,
+       Kota : "Jakarta",
+      },
+      {
+       Nama : "Fala",
+       Umur : 20,
+       Kota : "Bandung",
+      },
+      {
+       Nama : "Diana",
+       Umur : 24,
+       Kota : "Madiun",
+      },
+    };
+    console.log(user);
+    
+    Dengan menggunakan Map, maka
+    let data = users.map((el) => {
+     console.log(el.nama);
+    });
+    //Output :
+    Reyhan
+    Fala
+    Diana
+    ```
