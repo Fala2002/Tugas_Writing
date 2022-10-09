@@ -341,7 +341,7 @@ Output : ['Merah', 'Kuning', 'Biru'];
      console.log(object.keys.(siswa)); //Output : 'nama', 'umur', 'hobi'
      console.log(object.values.(siswa)); //Output : 'Fala', '20', 'Berenang'
      ```
-- **Looping Object** Looping sendiri berarti perulangan. Contoh scriptnya :
+- **Looping Object** Looping sendiri berarti perulangan. Jika kita ingin menampilkan seluruh object properti, kita bisa menggunakan looping. Jadi tidak perlu mengakses secara manual memanggil setiap propertinya. Contoh scriptnya :
     ```
     let siswa = {
      nama : "Reyhan",
@@ -386,14 +386,14 @@ Output : ['Merah', 'Kuning', 'Biru'];
     Diana
     ```
 ### **Rekrusif dan Modules**
-- **Rekrusif** adalah function atau algoritma yang memanggil dirinya sendiri sampai kondisi tertentu. Rekrusif ini mirip seperti looping. Misalnya pada gambar ada gambar di dalam gambar. Terdapat 2 kunci pada rekrusif,yaitu base case atau titik berhenti dan recrusion case atau titik memanggil function. Contoh script :
+- **Rekrusif** adalah function atau algoritma yang memanggil dirinya sendiri sampai kondisi tertentu. Rekrusif ini mirip seperti looping. Misalnya pada gambar ada gambar di dalam gambar. Rekrusif dapat diartikan sebagai teknik pemrograman yang menggunakan function atau fungsi. Sederhananya adalah fungsi yang memanggil fungsi tersebut atau dirinya sendiri, seolah-olah terjadi suatu perulangan. Proses pemanggilan inilah yang disebut sebagai recursion (rekursi) dan akan terus dilakukan sampai pada kondisi yang sudah ditentukan. Terdapat 2 kunci pada rekrusif, yaitu Base Case/titik berhenti adalah kasus dasar untuk menyelesaikan permasalahan. Base case akan dikunjungi jika rekursi berakhir (kondisi untuk berhenti terpenuhi), serta mengembalikan nilai tanpa melakukan rekursi kembali. dan Recrusion Case/titik memanggil function yaitu permasalahan yang ada tentunya akan diperkecil dengan melakukan pemanggilan function itu sendiri (recursion call). Permasalahan dapat diperkecil dengan mengurangi atau memecahkan data input pada setiap pemanggilannya hingga mencapai base case. Contoh script:
   ```
   Menampilkan bilangan 1 2 3 4 5
   
   function deretAngka(n){
-   if (n == 1) {
+   if (n == 1) { //base case
      console.log(n)
-   } else {
+   } else { //recrusion case
      deretAngka(n-1)
      console.log(n);
     }
@@ -415,7 +415,8 @@ Output : ['Merah', 'Kuning', 'Biru'];
   console.log(faktorial(3))
   //Output = 6
   ```
-- **Modules** adalah cara untuk memisahkan kode ke file yang berbeda. Keuntungan dari modules yaitu mudah untuk mengelola kode serta kode tidak menumpuk di dalam satu file. Terdapat 2 kata kunci pada modules yaitu export dan import. Contoh script :
+- **Modules** adalah cara untuk memisahkan kode ke file yang berbeda. Keuntungan dari modules yaitu mudah untuk mengelola kode serta kode tidak menumpuk di dalam satu file. Terdapat 2 kata kunci pada modules yaitu export dan import. Modules juga dapat diartikan sebagai sebuah cara bagi JavaScript untuk mengisolasi kode dari suatu file ke dalam sebuah file terpisah. Sehingga kode tersebut dapat digunakan berulang kali dengan cara di-export dari suatu file dan di-import ke file yang lainnya. Kita dapat melakukan export kode apapun pada JavaScript seperti string, object, array, number, hingga function.
+- **Export**, digunakan untuk meng-export variabel pada file JavaScript. Variabel yang di_export_ dapat berisi data seperti string, object, array, hingga function. Hal ini dilakukan agar file JavaScript tersebut dapat dijadikan sebuah module, sehingga variabel yang telah di-export dapat digunakan pada file JavaScript lain dengan menggunakan import. Contoh script :
   ```
   // File Jepang.js
   export let motor = ["suzuki", "yamaha", "honda", "kawasaki"]
@@ -427,6 +428,12 @@ Output : ['Merah', 'Kuning', 'Biru'];
    console.log("hallooo")
   }
   
+   // File Amerika.js
+  let apple = ["iphone", "macbook", "imac"]
+    export {apple}
+  ```
+- **Import**, diibaratkan sebagai pasangan dari export. Jadi import digunakan untuk menggunakan variabel yang sudah di-export dari module lainnya. Contoh script :
+  ```
   import {apple} from './amerika.js';
    console.log(apple);
   
@@ -436,16 +443,11 @@ Output : ['Merah', 'Kuning', 'Biru'];
    
   import Entertainment, { motor as motorJepang, sayHello  } from "./jepang.js"
   console.log(Entertainment);
-  
-  // File Amerika.js
-  let apple = ["iphone", "macbook", "imac"]
-    export {apple}
-  
-  Berdasarkan script diatas,
+  ```
+- Berdasarkan contoh script diatas, maka : 
   - Indonesia hanya bisa import, karena dia file utama.
   - Jepang bisa melakukan import dan export.
   - Amerika hanya melakukan export.
-  ```
 - Hal hal yang harus dilakukan saat membuat modules adalah menambahkan type="module" pada script utama, lalu siapkan script ke-2 dan sebagainya untuk melakukan export, serta lakukan import pada file atau script utama.
 
 ### **Asynchronous**
