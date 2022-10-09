@@ -450,4 +450,107 @@ Output : ['Merah', 'Kuning', 'Biru'];
   - Amerika hanya melakukan export.
 - Hal hal yang harus dilakukan saat membuat modules adalah menambahkan type="module" pada script utama, lalu siapkan script ke-2 dan sebagainya untuk melakukan export, serta lakukan import pada file atau script utama.
 
-### **Asynchronous**
+### **Asynchronous dan Synchronous **
+- **Synchronous** seperti saat kita mengeksekusi perintah satu persatu dan berurutan. Dalam hal ini, ia hanya dapat mengeksekusi satu perintah pada satu waktu dan harus menunggu satu perintah tersebut selesai sebelum melanjutkan perintah selanjutnya. Contoh script :
+```
+console.log("antrian 1");
+console.log("antrian 2");
+console.log("antrian 3");
+
+// output
+// antrian 1
+// antrian 2
+// antrian 3
+```
+- **Asynchronous** berarti mengizinkan komputer untuk memproses perintah lain sambil menunggu suatu proses lain yang sedang berlangsung. Ini artinya kita bisa melakukan lebih dari 1 proses sekaligus (multi-thread). 2 cara untuk membuat proses asynchronous yaitu :
+ - **setTimeout(function, milliseconds)** digunakan untuk simulasi pemanggilan kembali proses asynchronous yang sedang/sudah selesai dijalankan. Pemanggilan hanya dilakukan 1 kali. Contoh script :
+   ```
+   setTimeout(() => {
+   console.log("Cuci baju"); // proses asynchronous
+   }, 1000);
+   console.log("Menyapu");
+   console.log("Mengepel");
+   console.log("Memasak");
+
+   // 1000 ms = 1 second
+
+   // Output:
+   // Menyapu
+   // Mengepel
+   // Memasak
+   // Cuci baju
+   ```
+ - **setInterval(function, milliseconds)** digunakan untuk simulasi pemanggilan proses asynchronous yang sedang/sudah dijalankan dalam interval waktu tertentu. Pemanggilan dilakukan berkali-kali sesuai interval waktu yang ditentukan. Contoh script :
+   ```
+   setInterval(() => {
+   console.log("Cuci baju"); // proses asynchronous
+   }, 3000);
+   console.log("Menyapu");
+   console.log("Mengepel");
+   console.log("Memasak");
+
+   // 3000 ms = 3 second
+
+   // Output:
+   // Menyapu
+   // Mengepel
+   // Memasak
+   // Cuci baju (x time)
+
+   // Cuci baju akan dijalankan setiap 3 detik sekali
+   ```
+- Terdapat beberapa cara dalam membuat asynchronous secara simulasi artinya tidak murni asynchronous, antara lain :
+  - **Callback** adalah function yang kita letakan di dalam argumen/parameter pada function, dan function tersebut akan dieksekusi setelah function pertama menyelesaikan tugasnya. Contoh script :
+    ```
+    function proses1() {
+    console.log("proses 1 selesai dijalankan");
+    }
+
+    function proses2(callback) {
+    setTimeout(function () {
+     console.log("proses 2 selesai dijalankan");
+     callback();
+     }, 100);
+    }
+
+    function proses3() {
+    console.log("proses 3 selesai dijalankan");
+    }
+    proses1();
+    proses2(proses3);
+
+    Output
+    proses1 selesai dijalankan
+    proses2 selesai dijalankan
+    proses3 selesai dijalankan
+    
+    Dalam hal ini apabila proses2 membutuhkan waktu saat diproses, maka proses3 dijalankan terlebih dahulu. Lalu apabila proses2 selesai diproses maka akan dicallback untuk menampilkan hasil console.lognya.
+    ```
+  - **Promise** adalah salah satu fitur baru di ES6, biasa digunakan untuk melakukan http request/fetch data dari API. Promise sesuai dengan artinya adalah janji. Seperti ketika kita berjanji, jika apa yang kita janjikan bisa kita lakukan maka kita harus melakukannya, jika janjinya ada halangan maka kita tidak bisa melakukannya atau jika janji tersebut belum pada waktunya kita juga harus menunggunya. Dalam pengambilan data, promise memiliki 3 kemungkinan state yaitu Pending(sedang dalam proses), Fulfilled (berhasil), serta Rejected (gagal). Contoh script:
+    ```
+    const condition = true;
+
+    let newPromise = new Promise((resolve, reject) => {
+    if (condition) {
+    // apa yang dilakukan jika promise 'fulfilled'
+    resolve("Berhasil");
+    } else {
+    // apa yang dilakukan jika promise 'rejected'
+    reject(new Error("Error Gagal"));
+    }
+    });
+
+    newPromise
+    .then((result) => {
+    console.log(result); // Output: Berhasil
+    })
+    .catch((error) => {
+    console.log(error);
+    })
+    .finally(() => {
+    console.log(
+      "Finally tetap terpanggil dalam kondisi fulfilled ataupun rejected"
+    ); // Output: Finally tetap terpanggil dalam kondisi fulfilled ataupun rejected
+    });
+    ```
+  - **
