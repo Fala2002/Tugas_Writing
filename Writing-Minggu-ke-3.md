@@ -385,6 +385,7 @@ Output : ['Merah', 'Kuning', 'Biru'];
     Fala
     Diana
     ```
+    
 ### **Rekrusif dan Modules**
 - **Rekrusif** adalah function atau algoritma yang memanggil dirinya sendiri sampai kondisi tertentu. Rekrusif ini mirip seperti looping. Misalnya pada gambar ada gambar di dalam gambar. Rekrusif dapat diartikan sebagai teknik pemrograman yang menggunakan function atau fungsi. Sederhananya adalah fungsi yang memanggil fungsi tersebut atau dirinya sendiri, seolah-olah terjadi suatu perulangan. Proses pemanggilan inilah yang disebut sebagai recursion (rekursi) dan akan terus dilakukan sampai pada kondisi yang sudah ditentukan. Terdapat 2 kunci pada rekrusif, yaitu Base Case/titik berhenti adalah kasus dasar untuk menyelesaikan permasalahan. Base case akan dikunjungi jika rekursi berakhir (kondisi untuk berhenti terpenuhi), serta mengembalikan nilai tanpa melakukan rekursi kembali. dan Recrusion Case/titik memanggil function yaitu permasalahan yang ada tentunya akan diperkecil dengan melakukan pemanggilan function itu sendiri (recursion call). Permasalahan dapat diperkecil dengan mengurangi atau memecahkan data input pada setiap pemanggilannya hingga mencapai base case. Contoh script:
   ```
@@ -579,3 +580,138 @@ console.log("antrian 3");
      run(true);
      ```
      
+### **Web Storage**
+- **Web Storage** adalah tempat menyimpan suatu data. Berbeda dengan objek atau array, data yang disimpan pada objek atau array JavaScript bersifat sementara, dan akan hilang jika terjadi reload atau pergantian URL pada browser. Sedangkan data yang disimpan pada Web Storage akan bertahan lebih lama karena data akan disimpan pada storage browser. Ada beberapa cara untuk menyimpan data pengguna seperti pencarian, artikel berita, dan lain-lain ke lokal (browser) menggunakan web storage seperti cookies, local storage, dan session storage. Cookies adalah data kecil yang dikirim dari situs web dan disimpan di komputer oleh web browser saat menjelajah. Disebut data kecil karena maksimum data yang dapat disimpan dalam cookies adalah 4096 bytes (4 KB). Penyimpanan data pada local storage dan session storagelebih besar yaitu 5MB per page tanpa mempengaruhi kinerja situs web. Namun, penting untuk diketahui agar tidak menyimpan data sensitif seperti password ke dalam local storage ataupun session storage untuk menghindari serangan pencurian data. Hal yang harus diperhatikan dalam web storage yaitu preferensi user, setting, score, serta posisi video. Dan dalam web storage terdapat study case yaitu fitur dark mode, detail page, serta todo. Hal-hal yang dilakukan dalam membuat light-dark mode yaitu atur tema light dengan css, buat function handle darkmode dengan javascript, lalu buat tombol button diklik handle dark-mode dengan html. Contoh script :
+```
+//File HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <form action="" class="container">
+      <input type="text" placeholder="Hari ini saya akan..." />
+      <ul id="list-container"></ul>
+    </form>
+    <button id="toggle">Toggle</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+```
+```
+//File CSS
+@import "https://fonts.googleapis.com/css?family=Poppins";
+
+/*
+  hint untuk dark-theme
+  :root 
+  var()  
+  bisa cek folder dark-mode
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e0e0e0;
+  min-height: 100vh;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body.dark {
+  background: black;
+  color: white;
+}
+
+.container {
+  padding-top: 50px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  padding: 5px 8px;
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 8px;
+}
+
+#list-container li {
+  margin: 10px 0;
+  padding: 8px 12px;
+  list-style: none;
+  background: #e0e0e0;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 8px;
+  box-shadow: 23px 23px 46px #d0d0d0, -23px -23px 46px #f0f0f0;
+}
+```
+```
+//File Javascript Theme
+// ==================== check ketika pertama kali website di buka, apakah ada key: theme dan value: dark di storage
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+} else {
+  document.body.classList.remove("dark");
+}
+
+// ==================== check ketika pertama kali website di buka, apakah ada key: theme dan value: dark di storage
+document.getElementById("toggle").onclick = () => {
+  if (localStorage.getItem("theme")) {
+    localStorage.removeItem("theme");
+    document.body.classList.remove("dark");
+  } else {
+    localStorage.setItem("theme", "dark");
+    document.body.classList.add("dark");
+  }
+};
+```
+```
+//File Javascript todo
+// ==================== init penampung list dari todo
+const todos = [];
+
+// ==================== check ketika pertama kali website di buka, apakah ada key: theme dan value: dark di storage
+if (localStorage.getItem("todo")) {
+  const todoStore = JSON.parse(localStorage.getItem("todo"));
+
+  todoStore.map((todo) => {
+    const li = document.createElement("li");
+    li.innerText = todo;
+
+    const container = document.querySelector("#list-container");
+    return container.appendChild(li);
+  });
+}
+
+// ==================== check ketika pertama kali website di buka, apakah ada key: theme dan value: dark di storage
+document.querySelector("form").addEventListener("submit", (ev) => {
+  ev.preventDefault();
+  const userInput = document.querySelector("input").value;
+
+  const li = document.createElement("li");
+  li.innerText = userInput;
+
+  todos.push(userInput);
+
+  localStorage.setItem("todo", JSON.stringify(todos));
+
+  const container = document.querySelector("#list-container");
+  container.appendChild(li);
+});
+
+/* 
+  Conclucion:
+  JSON.parse -> ubah string ke object 
+  JSON.stringify -> ubah apapun ke string JSON
+*/
+```
