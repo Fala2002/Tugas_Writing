@@ -553,4 +553,29 @@ console.log("antrian 3");
     ); // Output: Finally tetap terpanggil dalam kondisi fulfilled ataupun rejected
     });
     ```
-  - **
+  - **Async-await** adalah salah satu fitur baru dari javascript yang digunakan untuk menangani hasil dari sebuah Promise. Async berfungsi untuk mengubah function synchronous menjadi asynchronous. Sedangkan await berfungsi untuk menunda sebuah kode dijalankan sampai proses asynchronous berhasil. Contoh script :
+    ```
+    // Definisikan dahulu promise yang ingin digunakan
+     let condition = true;
+     let tesAsyncAwait = async (condition) => {
+     if (condition) {
+      return "Condition is fulfilled!";
+     } else {
+      throw "Condition is rejected!";
+       }
+     };
+
+     // Membuat fungsi run menjadi asynchronous menggunakan async/await
+     const run = async (condition) => {
+      try {
+     const message = await tesAsyncAwait(condition);
+     console.log(message);  // Output: Condition is fulfilled!
+     console.log("After condition is fulfilled"); // Output: After condition is fulfilled
+     } catch (error) {
+     console.log(error);
+      }
+     };
+
+     run(true);
+     ```
+     
