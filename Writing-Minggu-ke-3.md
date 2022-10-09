@@ -450,7 +450,7 @@ Output : ['Merah', 'Kuning', 'Biru'];
   - Amerika hanya melakukan export.
 - Hal hal yang harus dilakukan saat membuat modules adalah menambahkan type="module" pada script utama, lalu siapkan script ke-2 dan sebagainya untuk melakukan export, serta lakukan import pada file atau script utama.
 
-### **Asynchronous dan Synchronous **
+### **Asynchronous dan Synchronous**
 - **Synchronous** seperti saat kita mengeksekusi perintah satu persatu dan berurutan. Dalam hal ini, ia hanya dapat mengeksekusi satu perintah pada satu waktu dan harus menunggu satu perintah tersebut selesai sebelum melanjutkan perintah selanjutnya. Contoh script :
 ```
 console.log("antrian 1");
