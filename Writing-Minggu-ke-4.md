@@ -129,8 +129,8 @@ getDataDigimon()
 - Terdapat 2 cara atau pattern dalam menggunakan media query, antara lain :
   - Membuat file css berbeda untuk masing-masing device. 
   - Menggabungkan 1 file css untuk setting styling berbagai device. 
-  - **Flex** yaitu setting website hanya bisa diatur satu arah, entah ke samping, ke atas, ataupun ke bawah.
-  - **Grid** , bisa setting secara vertikal ataupun horizontal. 
+- **Flex** yaitu setting website hanya bisa diatur satu arah, entah ke samping, ke atas, ataupun ke bawah.
+- **Grid** , bisa setting secara vertikal ataupun horizontal. 
 
 ### **Boostrap 5**
 - **Boostrap** adalah framework css yang digunakan untuk melakukan styling. Framework lain yaitu material.ui (mui.com), bulma, serta tailwind.
