@@ -7,7 +7,8 @@
 - **My SQL Server** yaitu ketika membuat database terdapat server yang berjalan atau terdapat database yang berjalan atau beroperasi. 
 - MySQL bersifat open source, comfortable untuk banyak platfom, serta multi user. 
 - Untuk mengakses server dapat menggunakan workbench, dbeaver, tableplus, phpmy admin, datagrid, dan lain sebagainya. 
-- Nomor port dari mysql sendiri yaitu 3306. Dalam database terdapat istilah field yang berarti kolom, record yang berarti baris serta ta
+- Nomor port dari mysql sendiri yaitu 3306. Dalam database terdapat istilah field yang berarti kolom, record yang berarti baris serta tabel yang berarti kumpulan value yang dibangun oleh baris dan kolom, yang didalamnya berisikan atribut dari sebuah data.
+- **Database NoSQL** adalah database yang tidak memiliki perintah SQL. Konsep penyimpanannya semi struktural atau tidak struktural, dan tidak harus memiliki relasi layaknya tabel-tabel MySQL.
 - **DBMS** atau Database Management System adalah software yang dapat digunakan oleh user untuk berkomunikasi dengan data yang ada dalam media penyimpanan.
 - **SQL** adalah bahasa yang digunakan untuk mengakses database. SQL juga dapat diartikan sebagai query yang digunakan untuk berinteraksi pada RDMS (Relational Database Management System). Contoh query SQL antara lain :
     - **DDL** atau Data Definition Language adalah kumpulan perintah SQL yang digunakan untuk membuat, mengubah dan menghapus struktur dan definisi metadata dari objek-objek Database. Contoh query DDL yaitu
@@ -117,8 +118,92 @@
         - **Default** yaitu tipe data untuk set default value jika tidak di assign dengan value.
         - **Null** yaitu tipe data kosong atau tipe data yang belum di assign dengan value / data.
 
-
 - **Tipe Database Relationships** 
     - **One to One** adalah relasi antara baris 1 dengan 1 baris lainnya atau setiap baris data pada tabel pertama dihubungkan hanya ke satu baris data pada tabel ke dua. 
     - **One to Many** adalah relasi antara baris 1 dengan baris lainnya lebih dari satu atau setiap baris data dari tabel pertama dapat dihubungkan ke satu baris atau lebih data pada tabel ke dua.
     - **Many to Many** adalah satu baris atau lebih data pada tabel pertama bisa dihubugkan ke satu atau lebih baris data pada tabel ke dua. Artinya ada banyak baris di tabel satu dan tabel dua yang saling berhubungan satu sama lain.
+
+
+### **My SOL Lanjutan**
+- **Key Pada SQL** 
+    - **SuperKey** adalah kumpulan dari satu atau lebih dari satu key yang dapat digunakan untuk mengidentifikasi record secara unik dalam sebuah tabel.
+    - **Candidate Key** adalah kumpulan satu atau lebih fields/columns yang dapat mengidentifikasi record secara unik dalam tabel.
+    - **Primary Key** adalah kumpulan satu atau lebih fields/columns dari sebuah tabel yang secara unik mengidentifikasi sebuah record dalam tabel database. Valuenya tidak boleh berupa null ataupun duplicate value.
+    - **Alternate Key** adalah key yang bisa digunakan menjadi primary key.
+    - **Unique Key** adalah kumpulan dari satu atau lebih fields/columns di sebuah table database yang secara unik mengidentifikasi sebuah record dalam table database tersebut.
+    - **Foreign Key** adalah field di sebuah table database yang menjadi Primary Key di table database lain.
+
+- **Join Multiple Tables** yaitu mengambil records dari dua atau lebih table database yang memiliki relationship dan akan di sajikan dalam single result set. Join juga dapat diartikan sebagai penggabungan tabel yang dilakukan melalui kolom/key tertentu yang memiliki nilai terkait untuk mendapatkan satu set data dengan informasi lengkap. Pada join ini mirip seperti himpunan pada matematika. Contohnya 
+    - **Inner Join** yaitu semua baris akan diambil dari kedua table yang akan di JOIN, selama columns cocok dengan kondisi yang sudah di tentukan. Selain itu dapat digunakan untuk menampilkan data hanya yang sesuai di kedua tabel. Contoh penulisannya 
+    ```
+    create database store;
+
+    use store;
+
+    create table category (
+	    id int primary key not null auto_increment,
+	    name VARCHAR(25)
+    );
+
+    create table product (
+	    id int primary key not null auto_increment,
+	    name VARCHAR(50),
+	    price int,
+	    category_id int,
+	    FOREIGN KEY (category_id) REFERENCES category(id)
+    );
+
+    insert into category (name) VALUES
+    ("food"), 
+    ("baverage"), 
+    ("ala carte"),
+    ("dessert");
+
+    select * from category;
+
+    insert into product (name, price, category_id) VALUES
+    ("nasi goreng", 20000, 1), 
+    ("nasi gila", 25000, 1), 
+    ("kwetiaw", 20000, 1),
+    ("es teh", 5000, 2),
+    ("air mineral", 0, 2),
+    ("kerupuk", 5000, 3),
+    ("gorengan", 10000, 3),
+    ("sprit", 40000, 3),
+    ("es doger", 20000, 3),
+    ("es teh anget", 20000);
+
+    select * from product;
+
+    select product.id, product.name as product, product.price, category.name as category
+    from product inner join category
+    on product.category_id = category.id;
+
+    //Maka akan tampil data id, name product, harga, serta name category.
+    ```
+    - **Left Join** yaitu menampilkan semua data sebelah kiri dari tabel yang di joinkan dan menampilkan data sebelah kanan yang cocok dengan kondisi join. Jika tidak ditemukan kecocokan, maka akan di set NULL secara otomatis. Contoh penulisannya
+    ```
+    select product.id, product.name as product, product.price, category.name as category
+    from product left join category
+    on product.category_id = category.id;
+
+    //Maka akan tampil data id, name product, harga, serta name category.
+    ```
+    - **Right Join** yaitu menampilkan semua data sebelah kanan dari tabel yang di joinkan dan menampilkan data sebelah kiri yang cocok dengan kondisi join. Jika tidak ditemukan kecocokan, maka akan di set NULL secara otomatis. Contoh penulisannya
+    ```
+    select product.id, product.name, product.price, category.name 
+    from product right join category
+    on product.category_id = category.id;
+
+    //Maka akan tampil data id, name product, harga, serta name category. Dan juga tampil category.name dessert dengan id name product serta harga nilai null.
+    ```
+- **Aggregate Functions** yaitu mengambil satu nilai setelah melakukan perhitungan pada sekumpulan nilai.
+    - **MAX** yaitu fungsi mengembalikan nilai terbesar dari kolom yang dipilih. Contoh penulisannya ``select max(price) as max_price from product;``
+    - **MIN** yaitu fungsi mengembalikan nilai terkecil dari kolom yang dipilih. Contoh penulisannya ``select min(price) as min_price from product;``
+    - **SUM** yaitu fungsi mengembalikan jumlah total kolom numerik. Contoh penulisannya ``select sum(price) as total_price from product;``
+    - **COUNT** yaitu fungsi mengembalikan jumlah baris yang cocok dengan kriteria yang ditentukan. Contoh penulisannya ``select count(category_id) from product group by category_id;``
+    - **AVG** yaitu fungsi mengembalikan nilai rata-rata kolom numerik. Contoh penulisannya ``select avg(price) as rata_price from product;``
+- **Group By** digunakan untuk mengelompokkan suatu data.
+- **On** berarti dibagian mana data tersebut berada.
+- **Where** untuk mengambil data dengan menuju ke kolomnya langsung, tidak dapat mengakses alias (as), serta tidak dapat mengakses aggregate.
+- **Having** mirip seperti where tetapi bisa digunakan untuk mengakses alias(as), dapat digunakan pada aggregate, mengambil data dengan menuju ke kolom nama alias atau nama baru. 
