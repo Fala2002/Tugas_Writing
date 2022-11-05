@@ -117,3 +117,8 @@
         - **Default** yaitu tipe data untuk set default value jika tidak di assign dengan value.
         - **Null** yaitu tipe data kosong atau tipe data yang belum di assign dengan value / data.
 
+
+- **Tipe Database Relationships** 
+    - **One to One** adalah relasi antara baris 1 dengan 1 baris lainnya atau setiap baris data pada tabel pertama dihubungkan hanya ke satu baris data pada tabel ke dua. 
+    - **One to Many** adalah relasi antara baris 1 dengan baris lainnya lebih dari satu atau setiap baris data dari tabel pertama dapat dihubungkan ke satu baris atau lebih data pada tabel ke dua.
+    - **Many to Many** adalah satu baris atau lebih data pada tabel pertama bisa dihubugkan ke satu atau lebih baris data pada tabel ke dua. Artinya ada banyak baris di tabel satu dan tabel dua yang saling berhubungan satu sama lain.
