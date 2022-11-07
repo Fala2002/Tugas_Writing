@@ -123,7 +123,6 @@
     - **One to Many** adalah relasi antara baris 1 dengan baris lainnya lebih dari satu atau setiap baris data dari tabel pertama dapat dihubungkan ke satu baris atau lebih data pada tabel ke dua.
     - **Many to Many** adalah satu baris atau lebih data pada tabel pertama bisa dihubugkan ke satu atau lebih baris data pada tabel ke dua. Artinya ada banyak baris di tabel satu dan tabel dua yang saling berhubungan satu sama lain.
 
-
 ### **My SOL Lanjutan**
 - **Key Pada SQL** 
     - **SuperKey** adalah kumpulan dari satu atau lebih dari satu key yang dapat digunakan untuk mengidentifikasi record secara unik dalam sebuah tabel.
@@ -207,3 +206,29 @@
 - **On** berarti dibagian mana data tersebut berada.
 - **Where** untuk mengambil data dengan menuju ke kolomnya langsung, tidak dapat mengakses alias (as), serta tidak dapat mengakses aggregate.
 - **Having** mirip seperti where tetapi bisa digunakan untuk mengakses alias(as), dapat digunakan pada aggregate, mengambil data dengan menuju ke kolom nama alias atau nama baru. 
+
+### **Authentication & Authorization in Express**
+- **Authentication** adalah proses dimana seorang user mendapatkan hak akses kepada suatu entity. Seorang user melakukan login kedalam suatu infrastruktur jaringan dan sistem mengenali user ID dan menerimanya untuk kemudian diberikan akses, sesuai dengan authorisasi yang dia terima. Jika data yang dimasukkan tidak ada maka user akan mendapatkan respon status 401.
+- Authentication terdiri dari dua jenis, yaitu Singke Factor Authentication dan Multi Factor Authentication. 
+- **Authorization** adalah proses penentuan apakah user tersebut diizinkan atau ditolak untuk melakukan satu atau beberapa action akses terhadap resources tertentu dalam sistem. User login terhadap sistem dengan menggunakan user-ID dan password, kemudian sistem mengenalinya dan user mendapatkan akses atau ditolak terhadap suatu resource sistem tertentu.
+- Authentication dan Authorization keduanya sama sama proses yang digunakan untuk melakukan pengecekan. 
+- **Encryption** adalah proses memformat suatu data ke dalam teks yang sengaja dibuat agar data susah dibaca kecuali memiliki kunci yang benar untuk mendekripsinya. Atau dapat diartikan yaitu menuliskan kata random pada data agar terjaga keamanannya. Encryption dibagi menjadi 2 jenis yaitu Symmetric encryption dan Asymmetric encryption.
+- Encryption terdiri dari dua jenis, yaitu Symmetric encryption, dan Asymmetric encryption.
+- Encryption adalah format data dengan dua arah, maksudnya saat data dibuat dalam bentuk plan text dan diubah dengan bentuk encrypted text maka ia dapat dikembalikan dalam bentuk plan text kembali. Sedangkan hashing yaitu format textnya dirubah ke text random, tidak mudah mengembalikan hasil hashing ke text semula. 
+- Bcrypt yaitu ketika email serta password yang dituliskan sama, tetapi hasil hashingnya berbeda. Hal ini dapat terjadi karena terdapat salt yang membuatnya menjadi acak.
+- **Otorisasi** adalah proses memberikan akses pada user.
+- **Autorisasi** adalah melakukan pengecekan data user ada tidak dalam sistem data.  
+- **JSON Web Token** adalah sebuah JSON Object yang didefinisikan dalam RFC 7519 sebagai cara aman untuk mewakili sekumpulan informasi antara dua pihak.
+- JWT digunakan untuk memberikan token berdasarkan data user tetapi data tersebut tidak muncul secara terang-terangan sehingga keamanan data tetap terjamin, karena untuk mendapatkan token ini harus menggunakan key rahasia yang diketahui antara user dengan sistem. Setiap token antara data satu dengan data yang lainnya berbeda. 
+- JWT sendiri memiliki 3 komponen yaitu header berisi alg dan typ biasanya berwarna biru, payload berisi sub, name, serta iat biasanya berwarna hijau , serta signature berisi BaseURL biasanya berwarna merah. 
+
+### **Sequelize**
+- **Sequelize** adalah ORM (Object Relational Mapping) Framework Node JS yang berbasis promise. ORM sendiri berarti metode untuk membuat data, tabel lalu diconvert dalam bentuk objek. Sequelize mendukung sebagian besar relational Database seperti MySQL, PostgresQL, MariaDB, SQLite dan Miscrosoft SQL Server. Tahap penggunaan Sequelize yaitu 
+- Menginstal sequelize cli globally yaitu ``npm i -g sequelize-cli``
+- Lalu menginstal sequelize di local project yaitu ``npm install sequelize``
+- Untuk menjalankan mysql, sequelize membutuhkan library tambahan yaitu mysql2. Cara menginstal mysql driver yaitu ``npm install mysql2``
+- Sebelum melakukan generate code, kita harus melakukan inisialisasi di project kita terlebih dahulu. Cara melakukan init sequelize di local project ``npx sequelize-cli init``. Dengan perintah init, projek yang dibuat akan otomatis membuat folder config untuk menyimpan file koneksi database, models untuk menyimpan semua model di projek ini, migrations untuk menyimpan semua file migrasi, serta seeders untuk menyimpan semua seed files.
+- Selanjutnya untuk membuat table todo dengan field yaitu ``npx sequelize-cli model:generate --name User --attributes email:string,password:string``
+- Kita dapat menggunakan generate dan bisa mengecek ke database sehingga database tersebut dapat kita gunakan untuk penimpanan DB. Caranya yaitu ``npx sequelize-cli db:migrate``
+- Jika ada yang salah, dapat dikembalikan dengan (undo). Cara penulisannya yaitu``npx sequelize-cli db:migrate:undo``
+- Ketika berhasil melakukan generate maka akan tampil di database terdapat 1 table baru yang bernama Todos dan ada table SequelizeMete.
